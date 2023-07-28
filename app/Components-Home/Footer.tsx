@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import largelogo from '/app/Media/WebLogoLarge.png'
+import largelogo from './Media/intfanmedia.jpeg'
 
 export default function Footer() {
     return(
@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <a href="https://flowbite.com" className="flex items-center">
-                            <Image src={largelogo} className="h-15 w-auto" alt="biglogo" />
+                            <Image src={largelogo} className="h-13 w-20" alt="biglogo" />
                         </a>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
