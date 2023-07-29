@@ -1,4 +1,4 @@
-// import Image from "next/image"
+import Image from "next/image"
 // import Logo from "./Media/RMLogo.png"
 
 export default function Header() {

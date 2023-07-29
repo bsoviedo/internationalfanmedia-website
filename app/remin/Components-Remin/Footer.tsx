@@ -17,7 +17,7 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                             <ul className="text-gray-600 dark:text-gray-400">
                                 <li className="mb-4">
-                                    <a href="" className="hover:underline ">Youtube</a>
+                                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className="hover:underline ">Youtube</a>
                                 </li>
                                 <li>
                                     <a href="" className="hover:underline">Instagram</a>
