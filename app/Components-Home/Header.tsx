@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Logo from './Media/intfanmedia.jpeg'
+import Logo from './Media/intfanmedia.png'
 
 export default function Header() {
     return (
@@ -27,7 +27,7 @@ export default function Header() {
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="#" className="flex items-center">
-                        <Image src={Logo} className="w-auto h-10" alt="RMLogo"/>
+                        <Image src={Logo} className="w-auto h-auto" alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">
                         <a href="#" className="text-white bg-black hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Contact Us</a>
