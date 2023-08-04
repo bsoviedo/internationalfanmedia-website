@@ -10,12 +10,12 @@ export default function Construction() {
         </div>
         <div className="pt-12.5 relative justify-center items-center relative flex pt-20 " >
             <h2 className="font-bold text-white text-4xl ">
-                <Link href="/remin">Visit Remin</Link>
+                <Link href="/remin">Visit ReMin</Link>
             </h2>
         </div>
         <div className="pt-12.5 relative justify-center items-center relative flex pt-20 " >
             <h2 className="font-bold text-white text-4xl ">
-                <Link href="/barcelona">Visit Barcelona</Link>
+                <Link href="/barcelona">Visit Barçin</Link>
             </h2>
         </div>
         <div className="pt-12.5 relative justify-center items-center relative flex pt-20 " >
