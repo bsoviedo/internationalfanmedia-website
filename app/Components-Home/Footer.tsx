@@ -8,7 +8,7 @@ export default function Footer() {
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
                             <a href="#top" className="flex items-center">
-                                <img src="/intfanmedia.jpeg" width={40} height={40} alt="biglogo" />
+                                <img src="/intfanmedia.jpeg" width={150} height={150} alt="biglogo" />
                             </a>
                         </div>
                             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

@@ -11,7 +11,7 @@ export default function Header() {
             <nav className="bg-white px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="#" className="flex items-center">
-                        <img src="/intfanmedia.jpeg" width={100} height={100} alt="RMLogo"/>
+                        <img src="/intfanmedia.jpeg" width={120} height={120} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">
                         {/* <a href="#" className="text-white hover:text-yellow-500 bg-red-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download ReMin+ App</a> */}
