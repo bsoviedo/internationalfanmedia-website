@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Logo from "./Media/Valencia-Logo.png"
+// import Logo from "./Media/Valencia-Logo.png"
 import Link from "next/link"
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a className="flex items-center">
-                        <Image src={Logo} className="w-auto h-20" alt="RMLogo"/>
+                        <Image src="/Valencia-Logo.png" width={64} height={64} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2 ">
                         <a href="/Valencia" className="text-white hover:text-orange-500 bg-black  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download Valencia+ App</a>
