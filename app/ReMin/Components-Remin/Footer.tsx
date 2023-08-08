@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="mx-auto max-w-screen-xl">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
-                            <a href="#" className="flex items-center">
+                            <a href="#top" className="flex items-center">
                                 <Image src={largelogo} className="h-15 w-auto" alt="biglogo" />
                             </a>
                         </div>

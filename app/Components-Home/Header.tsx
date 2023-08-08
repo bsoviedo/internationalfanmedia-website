@@ -17,21 +17,21 @@ export default function Header() {
                         {/* <a href="#" className="text-white hover:text-yellow-500 bg-red-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download ReMin+ App</a> */}
                         <div className="flex space-x-5"> {/* Add space between logos */}
                         <div className="hover:scale-150">
-                            <Link href="/ReMin">
+                            <Link href="/ReMin" target="_blank" rel="noopener noreferrer">
                                 
                                     <Image src={ReminLogo} alt="Logo 1 Description" width={40} height={40} /> 
                                     {/* Adjust width and height as per your requirement */}
                             </Link>
                         </div>
                         <div className="hover:scale-150">
-                            <Link href="/Barcelona">
+                            <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
                                 
                                     <Image src={BarcaLogo} alt="Logo 2 Description" width={40} height={40} />
                                 
                             </Link>
                         </div>
                         <div className="hover:scale-150">
-                            <Link href="/Valencia">
+                            <Link href="/Valencia" target="_blank" rel="noopener noreferrer">
                                 
                                     <Image src={ValenciaLogo} alt="Logo 3 Description" width={40} height={40} />
                                 
@@ -42,16 +42,16 @@ export default function Header() {
                     <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
-                                <Link href="/ReMin" className="block py-2 pr-4 pl-3 text-black  rounded bg-blue-700 lg:bg-transparent lg:text-amber-700 lg:p-0 dark:text-white" aria-current="page">Teams</Link>
+                                <Link href="/ReMin" className="block py-2 pr-4 pl-3 text-black  rounded bg-blue-700 lg:bg-transparent lg:text-yellow-600 lg:p-0 dark:text-white" aria-current="page">Teams</Link>
                             </li>
                             <li>
-                                <Link href="/ReMin/News" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Us</Link>
+                                <Link href="/ReMin/News" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Us</Link>
                             </li>
                             <li>
-                                <Link href="/ReMin/Match-Center" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</Link>
+                                <Link href="/ReMin/Match-Center" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</Link>
                             </li>
                             <li>
-                                <Link href="/ReMin/Videos" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact Us</Link>
+                                <Link href="/ReMin/Videos" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact Us</Link>
                             </li>
                             {/* <li>
                                 <Link href="/ReMin/Podcasts" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Test</Link>

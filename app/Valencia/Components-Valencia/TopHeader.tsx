@@ -4,7 +4,7 @@ export default function TopHeader() {
             <div className="bg-gray-200 p-4 px-6">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                         <span className="text-sm font-medium text-black sm:text-center dark:text-gray-400"> 
-                        <a href="https://www.internationalfansmedia.com" className="pl-5 hover:underline">About</a>
+                        <a href="/" className="pl-5 hover:underline">About</a>
                         <a href="mailto:reminfanmedia@gmail.com" className="pl-6 hover:underline">Contact Us</a>
                         </span>
                         
