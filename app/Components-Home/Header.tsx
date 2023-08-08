@@ -1,16 +1,33 @@
-// import img from "next/img"
-// import Logo from './Media/intfanmedia.jpeg'
-import Link from 'next/link'
-// import ReminLogo from '/app/ReMin/Components-Remin/Media/RMLogo.png'
-// import BarcaLogo from '/app/Barcelona/Components-Barca/Media/Barcelona.png'
-// import ValenciaLogo from '/app/Valencia/Components-Valencia/Media/Valencia-Logo.png'
+'use client'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+type CustomLinkProps = {
+    href: string;
+    className?: string;
+    children: React.ReactNode;
+};
 
 export default function Header() {
+    const pathname = usePathname();
+
+    const CustomLink: React.FC<CustomLinkProps> = ({ href, children, className }) => {
+        const isActive = pathname === href;
+        const activeClass = isActive ? 'text-yellow-600' : '';
+
+        return (
+            <Link href={href}>
+                <span className={`${className} ${activeClass} cursor-pointer`}>
+                    {children}
+                </span>
+            </Link>
+        );
+    };
     return (
         <header className="sticky top-0 z-50 ">
             <nav className="bg-white px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <a href="#" className="flex items-center">
+                    <a href="/" className="flex items-center">
                         <img src="/intfanmedia.jpeg" width={120} height={120} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">
@@ -39,26 +56,21 @@ export default function Header() {
                         </div>
                     </div>
                     </div>
-                    <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                        <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-12 lg:mt-0 text-lg">
-                            <li>
-                                <Link href="/" className="block py-2 pr-4 pl-3 text-black  rounded bg-blue-700 lg:bg-transparent lg:text-yellow-600 lg:p-0 dark:text-white" aria-current="page">Teams</Link>
-                            </li>
-                            <li>
-                                <Link href="/" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About Us</Link>
-                            </li>
-                            <li>
-                                <Link href="/" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</Link>
-                            </li>
-                            <li>
-                                <Link href="/" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact Us</Link>
-                            </li>
-                            {/* <li>
-                                <Link href="/ReMin/Podcasts" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Test</Link>
-                            </li>
-                            <li>
-                                <Link href="/ReMin/Shop" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-amber-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Test</Link>
-                            </li> */}
+                    <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 lg:text-lg" id="mobile-menu-2">
+                        <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-8 lg:mt-0">
+                            {[
+                                { href: "/", name: "Teams", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/about-us", name: "About Us", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/contact-us", name: "Contact Us", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/careers", name: "Careers", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                // { href: "/shop", name: "Shop", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                            ].map((link) => (
+                                <li key={link.name}>
+                                    <CustomLink href={link.href} className={link.className}>
+                                        {link.name}
+                                    </CustomLink>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

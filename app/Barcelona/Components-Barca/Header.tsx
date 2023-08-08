@@ -7,7 +7,7 @@ export default function Header() {
         <header className="sticky top-0 z-50">
             <nav className="bg-white border-white px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <a href="#" className="flex items-center">
+                    <a href="/Barcelona" className="flex items-center">
                         <img src="/Barcelona.png" width={84} height={84} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">

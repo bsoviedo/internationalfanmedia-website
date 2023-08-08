@@ -1,14 +1,34 @@
-// import img from "next/img"
-// import Logo from "./Media/Valencia-Logo.png"
-import Link from "next/link"
+'use client'
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+type CustomLinkProps = {
+    href: string;
+    className?: string;
+    children: React.ReactNode;
+};
 
 export default function Header() {
+    const pathname = usePathname();
+
+    const CustomLink: React.FC<CustomLinkProps> = ({ href, children, className }) => {
+        const isActive = pathname === href;
+        const activeClass = isActive ? 'text-orange-500' : '';
+
+        return (
+            <Link href={href}>
+                <span className={`${className} ${activeClass} cursor-pointer`}>
+                    {children}
+                </span>
+            </Link>
+        );
+    };
     return (
         <header className="sticky top-0 z-50 " >
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <a className="flex items-center">
-                        <img src="/Valencia-Logo.png" width={84} height={84} alt="RMLogo"/>
+                    <a href="/Valencia" className="flex items-center">
+                        <img src="/Valencia-Logo.png" width={84} height={84} alt="ValenciaLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2 ">
                         <a href="/Valencia" className="text-white hover:text-orange-500 bg-black  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download Valencia+ App</a>
@@ -20,24 +40,21 @@ export default function Header() {
                     </div>
                     <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                         <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-8 lg:mt-0">
-                            <li>
-                                <Link href="/Valencia" className="block py-2 pr-4 pl-3 text-white  rounded bg-blue-700 lg:bg-transparent lg:text-orange-500 lg:p-0 dark:text-white" aria-current="page">HOME</Link>
-                            </li>
-                            <li>
-                                <Link href="/Valencia/News" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">NEWS</Link>
-                            </li>
-                            <li>
-                                <Link href="/Valencia/Match-Center" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">MATCH CENTER</Link>
-                            </li>
-                            <li>
-                                <Link href="/Valencia/Videos" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">VIDEOS</Link>
-                            </li>
-                            <li>
-                                <Link href="/Valencia/Podcasts" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">PODCASTS</Link>
-                            </li>
-                            <li>
-                                <Link href="/Valencia/Shop" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">SHOP</Link>
-                            </li>
+                            {[
+                                { href: "/Valencia", name: "HOME", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/Valencia/News", name: "NEWS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/Valencia/Match-Center", name: "MATCH CENTER", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/Valencia/Videos", name: "VIDEOS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/Valencia/Podcasts", name: "PODCASTS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/Valencia/Shop", name: "SHOP", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-orange-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+
+                            ].map((link) => (
+                                <li key={link.name}>
+                                    <CustomLink href={link.href} className={link.className}>
+                                        {link.name}
+                                    </CustomLink>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

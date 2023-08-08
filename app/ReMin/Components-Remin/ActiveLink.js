@@ -1,29 +1,26 @@
-import React from 'react'
-import { useRouter } from 'next/router'
-import PropTypes from 'prop-types'
+'use client'
+ 
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-
-export default function ActiveLink({ children, href, activeClassName }) {
-  const { asPath } = useRouter()
-
-  // add logic to add activeClassName if path is current pathname
-  const child = React.Children.only(children)
-  const childClassName = child.props.className || ''
-
-  const className =
-    asPath === href
-      ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName
-
+ 
+export function Navigation({ navLinks }) {
+  const pathname = usePathname()
+ 
   return (
-    <Link href={href}>
-      {React.cloneElement(child, {
-        className: className || null,
+    <>
+      {navLinks.map((link) => {
+        const isActive = pathname === link.href
+ 
+        return (
+          <Link
+            className={isActive ? 'text-blue' : 'text-black'}
+            href={link.href}
+            key={link.name}
+          >
+            {link.name}
+          </Link>
+        )
       })}
-    </Link>
+    </>
   )
-}
-
-ActiveLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
 }
