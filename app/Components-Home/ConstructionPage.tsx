@@ -15,7 +15,7 @@ export default function Construction() {
                     <Link href="/ReMin" target="_blank" rel="noopener noreferrer">
                         <button className="font-bold text-white w-full h-60 text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-r from-amber-300 to-blue-600 to-purple-500 hover:scale-110 ">
                             <img src="/RMLogo.png " alt="ReMin Logo" width={120} height={120}  />
-                            <div className="flex-grow flex items-center justify-center ml-[-10%]"> {/* Added a negative margin here */}
+                            <div className="flex-grow flex items-center justify-center ml-[-10%]"> 
                                 <span className='hover:underline'>ReMin Fan Media</span>
                             </div>
                         </button>
