@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import img from "next/img"
 // import Logo from './Media/intfanmedia.jpeg'
 import Link from 'next/link'
 // import ReminLogo from '/app/ReMin/Components-Remin/Media/RMLogo.png'
@@ -11,7 +11,7 @@ export default function Header() {
             <nav className="bg-white px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="#" className="flex items-center">
-                        <Image src="/intfanmedia.jpeg" width={40} height={40} alt="RMLogo"/>
+                        <img src="/intfanmedia.jpeg" width={100} height={100} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">
                         {/* <a href="#" className="text-white hover:text-yellow-500 bg-red-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download ReMin+ App</a> */}
@@ -19,21 +19,21 @@ export default function Header() {
                         <div className="hover:scale-150">
                             <Link href="/ReMin" target="_blank" rel="noopener noreferrer">
                                 
-                                    <Image src="/RMLogo.png" alt="Logo 1 Description" width={40} height={40} /> 
+                                    <img src="/RMLogo.png" alt="Logo 1 Description" width={40} height={40} /> 
                                     {/* Adjust width and height as per your requirement */}
                             </Link>
                         </div>
                         <div className="hover:scale-150">
                             <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
                                 
-                                    <Image src="/Barcelona.png" alt="Logo 2 Description" width={40} height={40} />
+                                    <img src="/Barcelona.png" alt="Logo 2 Description" width={40} height={40} />
                                 
                             </Link>
                         </div>
                         <div className="hover:scale-150">
                             <Link href="/Valencia" target="_blank" rel="noopener noreferrer">
                                 
-                                    <Image src="/Valencia-Logo.png" alt="Logo 3 Description" width={40} height={40} />
+                                    <img src="/Valencia-Logo.png" alt="Logo 3 Description" width={40} height={40} />
                                 
                             </Link>
                         </div>

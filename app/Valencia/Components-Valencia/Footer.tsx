@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import img from 'next/img'
 
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
                             <a href="#top" className="flex items-center">
-                                <Image src="/Valencia-Logo.png" width={100} height={100} alt="biglogo" />
+                                <img src="/Valencia-Logo.png" width={100} height={100} alt="biglogo" />
                             </a>
                         </div>
                             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
