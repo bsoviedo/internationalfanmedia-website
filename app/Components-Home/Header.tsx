@@ -40,7 +40,7 @@ export default function Header() {
                     </div>
                     </div>
                     <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                        <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-12 lg:mt-0 text-xl">
+                        <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-12 lg:mt-0 text-lg">
                             <li>
                                 <Link href="/" className="block py-2 pr-4 pl-3 text-black  rounded bg-blue-700 lg:bg-transparent lg:text-yellow-600 lg:p-0 dark:text-white" aria-current="page">Teams</Link>
                             </li>
