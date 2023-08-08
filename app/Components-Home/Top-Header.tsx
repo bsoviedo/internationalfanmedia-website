@@ -2,7 +2,7 @@ export default function TopHeader() {
     return (
             <div className="bg-gray-200 p-4 px-6">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                <div className="flex flex-row justify-center  select-none">
+                {/* <div className="flex flex-row justify-center  select-none">
                     <div className="flex flex-row items-center right-1 ">
                         <button className="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-300 focus:bg-gray-200 focus:outline-none"
                                     >
@@ -22,7 +22,7 @@ export default function TopHeader() {
                         </button>
                     </div>
 
-                </div>
+                </div> */}
                         {/* <span className="text-sm font-medium text-black sm:text-center dark:text-gray-400"> 
                         <a href="https://www.internationalfansmedia.com" className="pl-5 hover:underline">About</a>
                         <a href="mailto:reminfanmedia@gmail.com" className="pl-6 hover:underline">Contact Us</a>
