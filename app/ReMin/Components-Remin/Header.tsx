@@ -25,7 +25,7 @@ export default function Header() {
                                 <Link href="/ReMin" className="block py-2 pr-4 pl-3 text-white  rounded bg-blue-700 lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">HOME</Link>
                             </li>
                             <li>
-                                <Link href="/ReMin/News" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">NEWS</Link>
+                                <Link href="/ReMin/News" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">NEWS Test</Link>
                             </li>
                             <li>
                                 <Link href="/ReMin/Match-Center" className="block py-2 pr-4 pl-3 text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">MATCH CENTER</Link>
