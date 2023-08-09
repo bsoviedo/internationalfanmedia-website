@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Construction() {
    
     return (
-        <main className='h-screen bg-slate-900 flex flex-col justify-start items-center pt-20'>
+        <main className='h-screen bg-slate-900 flex flex-col justify-start items-center pt-20' id="Teams">
             <h1 className="font-bold text-white text-4xl mb-10 animate-fade animate-once animate-ease-in">
                 Visit Our Teams
             </h1>  

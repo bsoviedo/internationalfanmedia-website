@@ -7,11 +7,11 @@ export default function Videos() {
         <div>
             <TopHeader/>
             <Header/>
-            <div className="h-screen pt-12.5 relative bg-gradient-to-t from-orange-600 to-neutral-900 ">
-                    <h1 className="pt-7 pl-7 font-bold text-white text-4xl hover:text-orange-500">
-                        Videos is Currently Under Construction
-                    </h1>   
-            </div>
+            <div className="h-screen pt-12.5 relative bg-gradient-to-t from-orange-600 to-neutral-900 flex justify-center items-center ">
+            <h1 className="font-bold text-white text-4xl animate-fade animate-once animate-ease-in">
+                Coming Soon
+            </h1>    
+        </div>
             <Footer/>
         </div>
     )

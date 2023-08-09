@@ -25,11 +25,11 @@ export default function Header() {
     };
 
     return (
-        <header className="sticky top-0 z-50">
+        <header className="sticky top-0 z-50 border-b border-gray-300">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="/ReMin" className="flex items-center">
-                        <img src="/RMLogo.png" width={64} height={64} alt="RMLogo"/>
+                        <img src="/RMLogo.png" width={84} height={84} alt="RMLogo"/>
                     </a>
                     <div className="flex items-center lg:order-2">
                         <a href="#" className="text-white hover:text-purple-400 bg-black focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download ReMin+ App</a>
