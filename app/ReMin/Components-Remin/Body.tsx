@@ -1,10 +1,5 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick';
-import Resizable from './testSlider';
-
 
 const Body: React.FC = () => {
     // States to manage visibility
@@ -45,47 +40,51 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-t from-amber-300 to-blue-600 to-purple-500 overflow-y-auto p-4 h-screen">
+        <div className="bg-gradient-to-b from-fuchsia-300 to-purple-400 overflow-y-auto p-5 h-screen">
             <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-5">
                 <div>
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1" title="Welcome to ReMin Fan Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-lg animate-fade animate-ease-in' ></iframe>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1&mute=1&loop=1" title="Welcome to ReMin Fan Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-lg animate-fade animate-duration-500 animate-ease-in shadow-2xl' ></iframe>
                 </div>
 
-                <div className="my-8 h-1 bg-gradient-to-r from-fuchsia-200 via-purple-200 to-blue-200"></div>
+                <div className="my-8 h-1 bg-white"></div>
 
                 {/* Recent Uploads Section */}
                 <div className="mt-8" ref={recentUploadsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline '>
-                    <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
+                        <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                     </a>
                     <div className="flex space-x-4">
                         <a href="" className="">
-                            <img src="/thumbnail-1.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
+                            <img src="/thumbnail-3.png" height={1000} width={1000} alt="Vid-2" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
                         </a>
-                        <a href="" className="">
-                            <img src="/thumbnail-3.png" height={1000} width={1000} alt="Vid-2" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
+                        <a className="relative">
+                            <img src="/thumbnail-1.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
+                            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-60 rounded-lg">
+                                <p className="text-white text-2xl font-bold">Coming Soon</p>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div className="my-8 h-1 bg-gradient-to-r from-fuchsia-200 via-purple-200 to-blue-200"></div>
+                <div className="my-8 h-1 bg-white"></div>
 
                 {/* Shorts Section */}
                 <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline '>
                         <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                     </a>
                         <div className={`overflow-x-auto whitespace-nowrap overflow-x-scroll ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/pW1Ku2Hepyg" title="Short 1" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2"></iframe>
+                            <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer">
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/pW1Ku2Hepyg" title="Short 1" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2 shadow-lg"></iframe>
+                            </a>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 2" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 2" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/qawtlkcHOKE" title="Short 4" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/qawtlkcHOKE" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 5" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
-
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 6" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
                         </div>
                 </div>
