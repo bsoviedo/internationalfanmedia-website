@@ -3,24 +3,9 @@ export default function TopHeader() {
             <div className="bg-gray-200 p-4 px-6">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <div className="flex flex-row justify-center  select-none">
-                    <div className="flex flex-row items-center right-1 ">
-                        <button className="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-300 focus:bg-gray-200 focus:outline-none"
-                                    >
-                                        <span className="text-md">En</span>
-                                        <span className="ml-1"> <img src="https://img.icons8.com/?size=512&id=t3NE3BsOAQwq&format=png" className="w-5 h-5" /></span>
-                        </button>
-
-                        <button className="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-300 focus:bg-gray-200 focus:outline-none "
-                                    >
-                                        <span className="text-md">Es</span>
-                                        <span className="ml-1"> <img src="https://www.countryflags.com/wp-content/uploads/spain-flag-png-xl.png" className="w-5 h-5 rounded-xl" /></span>
-                        </button>
-                        <button className="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-300 focus:bg-gray-200 focus:outline-none "
-                                    >
-                                        <span className="text-md">Fr</span>
-                                        <span className="ml-1"> <img src="https://www.countryflags.com/wp-content/uploads/france-flag-png-large.png" className="w-5 h-5 rounded-xl" /></span>
-                        </button>
-                    </div>
+                <span className="text-sm font-medium text-black sm:text-center dark:text-gray-400"> 
+                        <a href="https://linktr.ee/reminfanmedia" target="_blank" rel="noopener noreferrer" className="pl-5 hover:underline font-medium">Link Tree &#127796;</a>
+                 </span>
 
                 </div>
                         {/* <span className="text-sm font-medium text-black sm:text-center dark:text-gray-400"> 

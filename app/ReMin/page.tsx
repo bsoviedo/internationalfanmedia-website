@@ -9,8 +9,8 @@ export default function Home() {
     <div>
       <TopHeader/>
       <Header/>
-      <Construction/>
-      {/* <Body/> */}
+      {/* <Construction/> */}
+      <Body/>
       <Footer/>
     </div>
   )

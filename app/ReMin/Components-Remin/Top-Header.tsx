@@ -1,7 +1,7 @@
 
 export default function TopHeader() {
 return (
-        <div className="bg-pink-100 p-4 px-6">
+        <div className="bg-indigo-100 p-4 px-6">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <span className="text-sm font-medium text-black sm:text-center dark:text-gray-400"> 
                     <a href="/" className="pl-5 hover:underline">About</a>
