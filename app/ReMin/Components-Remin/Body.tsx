@@ -45,7 +45,7 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-slate-50 overflow-y-auto p-4 h-screen">
+        <div className="bg-gradient-to-t from-amber-300 to-blue-600 to-purple-500 overflow-y-auto p-4 h-screen">
             <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-5">
                 <div>
                     <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1" title="Welcome to ReMin Fan Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-lg animate-fade animate-ease-in' ></iframe>
@@ -55,8 +55,8 @@ const Body: React.FC = () => {
 
                 {/* Recent Uploads Section */}
                 <div className="mt-8" ref={recentUploadsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
-                    <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline '>
+                    <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                     </a>
                     <div className="flex space-x-4">
                         <a href="" className="">
@@ -71,8 +71,8 @@ const Body: React.FC = () => {
 
                 {/* Shorts Section */}
                 <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
-                        <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
+                        <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                     </a>
                         <div className={`overflow-x-auto whitespace-nowrap overflow-x-scroll ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                             <iframe width="320" height="550" src="https://www.youtube.com/embed/pW1Ku2Hepyg" title="Short 1" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2"></iframe>
