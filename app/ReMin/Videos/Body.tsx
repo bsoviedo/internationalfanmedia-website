@@ -48,13 +48,13 @@ const Body: React.FC = () => {
                         <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                     </a>
                     <div className="flex space-x-4">
-                    <a href=''>
+                    <a href='https://youtu.be/Ohgk9Ad7TeY' target="_blank" rel="noopener noreferrer">
                         <img src="/thumbnail-2.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
                     </a>
-                        <a href="" className="">
+                        <a href="https://youtu.be/ifJkNlgl5vE" target="_blank" rel="noopener noreferrer" className="">
                             <img src="/thumbnail-3.png" height={1000} width={1000} alt="Vid-2" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
                         </a>
-                        <a className="relative">
+                        <a className='relative'>
                             <img src="/thumbnail-1.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
                             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-60 rounded-lg">
                                 <p className="text-white text-2xl font-bold">Coming Soon</p>

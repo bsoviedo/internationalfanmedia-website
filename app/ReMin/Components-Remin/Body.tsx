@@ -54,7 +54,7 @@ const Body: React.FC = () => {
                         <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                     </a>
                     <div className="flex space-x-4">
-                        <a href="" className="">
+                        <a href="https://youtu.be/ifJkNlgl5vE" target="_blank" rel="noopener noreferrer" className="">
                             <img src="/thumbnail-3.png" height={1000} width={1000} alt="Vid-2" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
                         </a>
                         <a className="relative">
