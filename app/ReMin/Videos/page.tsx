@@ -1,6 +1,6 @@
 import TopHeader from '../Components-Remin/Top-Header'
 import Header from '../Components-Remin/Header'
-import Body from './Body.tsx'
+import Body from './Body'
 import Footer from '../Components-Remin/Footer'
 
 export default function Videos() {
