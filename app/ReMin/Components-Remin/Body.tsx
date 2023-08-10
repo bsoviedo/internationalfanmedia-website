@@ -70,7 +70,7 @@ const Body: React.FC = () => {
                 {/* Shorts Section */}
                 <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
                     <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline '>
-                        <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
+                        <h1 className={`text-white text-3xl font-bold mb-8  ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                     </a>
                         <div className={`overflow-x-auto whitespace-nowrap overflow-x-scroll ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                             <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer">
@@ -80,9 +80,9 @@ const Body: React.FC = () => {
 
                             <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            {/* <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 4" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 4" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 5" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
+                            {/* <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 5" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
 
                             <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 6" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe> */}
 
