@@ -45,10 +45,10 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gray-200 overflow-y-auto p-4 h-screen">
+        <div className="bg-slate-50 overflow-y-auto p-4 h-screen">
             <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-5">
                 <div>
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1" title="Welcome to ReMin Fan Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-lg animate-fade animate-ease-in' ></iframe>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1" title="Welcome to ReMin Fan Media" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className='rounded-lg animate-fade animate-ease-in' ></iframe>
                 </div>
 
                 <div className="my-8 h-1 bg-gradient-to-r from-fuchsia-200 via-purple-200 to-blue-200"></div>
@@ -71,23 +71,23 @@ const Body: React.FC = () => {
 
                 {/* Shorts Section */}
                 <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
-                <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
-                    <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
-                </a>
-                    <div className="overflow-x-auto whitespace-nowrap overflow-x-scroll">
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/pW1Ku2Hepyg" title="Short 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2"></iframe>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
+                        <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
+                    </a>
+                        <div className={`overflow-x-auto whitespace-nowrap overflow-x-scroll ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/pW1Ku2Hepyg" title="Short 1" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2"></iframe>
 
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 2" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/qawtlkcHOKE" title="Short 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/qawtlkcHOKE" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
-                        <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
+                            <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe>
 
-                    </div>
+                        </div>
                 </div>
                 
             </div>
