@@ -55,7 +55,7 @@ const Body: React.FC = () => {
 
                 {/* Recent Uploads Section */}
                 <div className="mt-8" ref={recentUploadsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" className='hover:underline decoration-black'>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
                     <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                     </a>
                     <div className="flex space-x-4">
@@ -71,7 +71,7 @@ const Body: React.FC = () => {
 
                 {/* Shorts Section */}
                 <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
-                <a href="https://www.youtube.com/@ReMinFanMedia" className='hover:underline decoration-black'>
+                <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline decoration-black'>
                     <h1 className={`text-slate-900 text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                 </a>
                     <div className="overflow-x-auto whitespace-nowrap overflow-x-scroll">
