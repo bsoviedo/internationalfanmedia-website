@@ -48,9 +48,10 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
-                                { thumbnail: '/thumbnail-2.png', videoId: 'Ohgk9Ad7TeY' },
+                                { thumbnail: '/thumbnail-4.png', videoId: 'rZGGvNNlti0'},
                                 { thumbnail: '/thumbnail-3.png', videoId: '_UeLCe_xmSw' },
-                                { thumbnail: '/thumbnail-1.png', videoId: 'ifJkNlgl5vE' }
+                                { thumbnail: '/thumbnail-1.png', videoId: 'ifJkNlgl5vE' }, 
+                                { thumbnail: '/thumbnail-2.png', videoId: 'Ohgk9Ad7TeY' }
                             ].map((item, idx) => (
                                 <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
                                     <div className="aspect-w-16 aspect-h-9">
