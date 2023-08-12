@@ -41,52 +41,38 @@ const Body: React.FC = () => {
 
     return (
         <div className="bg-gradient-to-b from-fuchsia-300 to-purple-400 overflow-y-auto p-5 h-screen">
-            <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-5">
-                {/* Recent Uploads Section */}
+             <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2">
                 <div className="mt-8" ref={recentUploadsRef}>
                     <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
-                        <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
-                    </a>
-                    <div className="flex space-x-4">
-                    <a href='https://youtu.be/Ohgk9Ad7TeY' target="_blank" rel="noopener noreferrer">
-                        <img src="/thumbnail-2.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
-                    </a>
-                        <a href="https://youtu.be/ifJkNlgl5vE" target="_blank" rel="noopener noreferrer" className="">
-                            <img src="/thumbnail-3.png" height={1000} width={1000} alt="Vid-2" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
+                            <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                         </a>
-                        <a className='relative'>
-                            <img src="/thumbnail-1.png" height={1000} width={1000} alt="Vid-1" className={`rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`}></img>
-                            <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-60 rounded-lg">
-                                <p className="text-white text-2xl font-bold">Coming Soon</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div className="my-8 h-1 bg-white"></div>
-
-                {/* Shorts Section */}
-                <div className="mt-8 mb-10 relative rounded-lg" ref={shortsRef}>
-                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline '>
-                        <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
-                    </a>
-                        <div className={`overflow-x-auto whitespace-nowrap overflow-x-scroll ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
-                            <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer">
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/Iw8H-OF48L4" title="Short 1" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2 shadow-lg"></iframe>
-                            </a>
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/_iMqynHUdH4" title="Short 2" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
-
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/ZUeRVtvPXlA" title="Short 3" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
-
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/s5453Xn48B0" title="Short 4" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg  transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
-
-                            {/* <iframe width="320" height="550" src="https://www.youtube.com/embed/IUw3_E9rjak" title="Short 5" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2 shadow-lg"></iframe>
-
-                            <iframe width="320" height="550" src="https://www.youtube.com/embed/1db8vaP4XU8" title="Short 6" frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mx-2"></iframe> */}
-
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {[
+                                { thumbnail: '/thumbnail-2.png', videoId: 'Ohgk9Ad7TeY' },
+                                { thumbnail: '/thumbnail-3.png', videoId: '_UeLCe_xmSw' },
+                                { thumbnail: '/thumbnail-1.png', videoId: 'ifJkNlgl5vE' }
+                            ].map((item, idx) => (
+                                <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
+                                    <div className="aspect-w-16 aspect-h-9">
+                                        <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
+                                    </div>
+                                </a>
+                            ))}
                         </div>
-                </div>
-                
-            </div>
+                </div>   
+                <div className="my-8 h-1 bg-white"></div>
+                    {/* Shorts Section */}
+                        <div className="mt-8 mb-10" ref={shortsRef}>
+                            <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
+                                <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
+                            </a>
+                            <div className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
+                                {['09XrLKx461A', 'qawtlkcHOKE', 'Iw8H-OF48L4', '_iMqynHUdH4', 'ZUeRVtvPXlA', 's5453Xn48B0'].map((videoId, idx) => (
+                                    <iframe key={idx} width="320" height="550" src={`https://www.youtube.com/embed/${videoId}`} title={`Short ${idx + 1}`} frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2 shadow-lg"></iframe>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
         </div>
     );
 }

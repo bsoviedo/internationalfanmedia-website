@@ -60,19 +60,22 @@ const Body: React.FC = () => {
     
                     {/* Recent Uploads Section */}
                     <div className="mt-8" ref={recentUploadsRef}>
-                        <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
+                    <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className='hover:underline'>
                             <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Recent Uploads</h1>
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {['/thumbnail-3.png', '/thumbnail-1.png'].map((thumbnail, idx) => (
-                                <a href={`https://youtu.be/${idx === 0 ? 'ifJkNlgl5vE' : '_UeLCe_xmSw'}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
+                            {[
+                                { thumbnail: '/thumbnail-3.png', videoId: '_UeLCe_xmSw' },
+                                { thumbnail: '/thumbnail-1.png', videoId: 'ifJkNlgl5vE' }
+                            ].map((item, idx) => (
+                                <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
                                     <div className="aspect-w-16 aspect-h-9">
-                                        <img src={thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
+                                        <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
                                     </div>
                                 </a>
                             ))}
                         </div>
-                    </div>
+                </div>   
                         
                     <div className="my-8 h-1 bg-white"></div>
     
