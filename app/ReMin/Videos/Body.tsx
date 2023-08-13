@@ -48,6 +48,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-5.png', videoId: 'Hfnwet_wlhw'},
                                 { thumbnail: '/thumbnail-4.png', videoId: 'rZGGvNNlti0'},
                                 { thumbnail: '/thumbnail-3.png', videoId: '_UeLCe_xmSw' },
                                 { thumbnail: '/thumbnail-1.png', videoId: 'ifJkNlgl5vE' }, 
@@ -68,7 +69,7 @@ const Body: React.FC = () => {
                                 <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                             </a>
                             <div className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
-                                {['09XrLKx461A', 'qawtlkcHOKE', 'Iw8H-OF48L4', '_iMqynHUdH4', 'ZUeRVtvPXlA', 's5453Xn48B0'].map((videoId, idx) => (
+                                {['e6YBjjP686o', '09XrLKx461A', 'qawtlkcHOKE', 'Iw8H-OF48L4', '_iMqynHUdH4', 'ZUeRVtvPXlA', 's5453Xn48B0'].map((videoId, idx) => (
                                     <iframe key={idx} width="320" height="550" src={`https://www.youtube.com/embed/${videoId}`} title={`Short ${idx + 1}`} frameBorder="0" allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowFullScreen className="rounded-lg transition duration-150 ease-in-out inline-block mr-2 shadow-lg"></iframe>
                                 ))}
                             </div>

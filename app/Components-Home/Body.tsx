@@ -23,7 +23,7 @@ export default function Body() {
                 </li>
                 <li className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2">
                     <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
-                        <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-l from-blue-700 via-violet-600 to-red-700 hover:bg-orange-600 hover:scale-110">
+                        <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-l from-blue-700 via-violet-600 to-red-700  hover:scale-110">
                             <img src="/Barcelona.png" alt="Barça Logo" width={120} height={120}  />
                             <div className="flex-grow flex items-center justify-center space-x-3">
                                 <span className='hover:underline'>Barça International Fan Media</span>
