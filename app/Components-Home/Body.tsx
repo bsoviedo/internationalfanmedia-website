@@ -2,11 +2,9 @@ import Link from 'next/link'
 // import img from 'next/img'
 
 
-
 export default function Body() {
-   
     return (
-    <main className='min-h-screen bg-slate-900 flex flex-col justify-start items-center pt-20 pb-10' id="Teams">
+        <main className='min-h-screen bg-slate-900 flex flex-col justify-start items-center pt-20 pb-10' id="Teams">
             <h1 className="font-bold text-white text-4xl mb-10 animate-fade animate-once animate-ease-in">
                 Visit Our Teams
             </h1>  
@@ -21,25 +19,27 @@ export default function Body() {
                         </button>
                     </Link>
                 </li>
-                <li className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2">
-                    <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
-                        <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-l from-blue-700 via-violet-600 to-red-700 filter grayscale" >
-                            <img src="/Barcelona.png" alt="Barça Logo" width={120} height={120}  />
-                            <div className="flex-grow flex items-center justify-center space-x-3">
-                                <span className='hover:underline'>Barça International Fan Media</span>
-                            </div>
-                        </button>
-                    </Link>
-                </li>
-                <li className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2">
-                    <Link href="/Valencia" target="_blank" rel="noopener noreferrer">
-                        <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-r from-orange-600 to-red-600 filter grayscale">
-                            <img src="/Valencia-Logo.png " alt="Valencia Logo" width={120} height={120} />
-                            <div className="flex-grow flex items-center justify-center space-x-3">
-                                <span className='hover:underline'>Valencia International Fan Media</span>
-                            </div>
-                        </button>
-                    </Link>
+                <li className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2 flex space-x-4">  {/* Here's the flex parent container */}
+                    <div className="flex-grow"> {/* One child container to allow each button to take half the width */}
+                        <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
+                            <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-l from-blue-700 via-violet-600 to-red-700 " >
+                                <img src="/Barcelona.png" alt="Barça Logo" width={120} height={120}  />
+                                <div className="flex-grow flex items-center justify-center space-x-3">
+                                    <span className='hover:underline'>Barça International Fan Media</span>
+                                </div>
+                            </button>
+                        </Link>
+                    </div>
+                    <div className="flex-grow"> {/* Another child container */}
+                        <Link href="/Valencia" target="_blank" rel="noopener noreferrer">
+                            <button className="shadow-xl font-bold text-white w-full h-60 text-lg lg:text-3xl py-10 px-6 rounded-xl flex items-center bg-gradient-to-r from-orange-600 to-red-600">
+                                <img src="/Valencia-Logo.png " alt="Valencia Logo" width={120} height={120} />
+                                <div className="flex-grow flex items-center justify-center space-x-3">
+                                    <span className='hover:underline'>Valencia International Fan Media</span>
+                                </div>
+                            </button>
+                        </Link>
+                    </div>
                 </li>
             </ul>
         </main>
