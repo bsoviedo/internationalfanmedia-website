@@ -35,23 +35,17 @@ export default function Header() {
                         <div className="flex space-x-5"> {/* Add space between logos */}
                         <div className="hover:scale-150">
                             <Link href="/ReMin" target="_blank" rel="noopener noreferrer">
-                                
                                     <img src="/RMLogo.png" alt="Logo 1 Description" width={40} height={40} /> 
-                                    {/* Adjust width and height as per your requirement */}
                             </Link>
                         </div>
-                        <div className="filter grayscale">
+                        <div className="">
                             <Link href="/Barcelona" target="_blank" rel="noopener noreferrer">
-                                
                                     <img src="/Barcelona.png" alt="Logo 2 Description" width={40} height={40} />
-                                
                             </Link>
                         </div>
-                        <div className="filter grayscale">
+                        <div className="">
                             <Link href="/Valencia" target="_blank" rel="noopener noreferrer">
-                                
                                     <img src="/Valencia-Logo.png" alt="Logo 3 Description" width={50} height={50} />
-                                
                             </Link>
                         </div>
                     </div>
