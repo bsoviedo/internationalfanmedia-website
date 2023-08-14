@@ -65,7 +65,7 @@ const Body: React.FC = () => {
                 </div>   
                 <div className="my-8 h-1 bg-white"></div>
                     {/* Shorts Section */}
-                        <div className="mt-8 mb-10" ref={shortsRef}>
+                        <div className="mt-9 mb-10" ref={shortsRef}>
                             <a href="https://www.youtube.com/@ReMinFanMedia/shorts" target="_blank" rel="noopener noreferrer" className='hover:underline'>
                                 <h1 className={`text-white text-3xl font-bold mb-8 ${shortsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Shorts</h1>
                             </a>
