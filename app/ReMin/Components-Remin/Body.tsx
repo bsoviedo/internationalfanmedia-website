@@ -65,6 +65,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-7.png', videoId: 'KYMWs4o61HA'},
                                 { thumbnail: '/thumbnail-6.png', videoId: 'IEUjvBagcwo'},
                                 { thumbnail: '/thumbnail-5.png', videoId: 'Hfnwet_wlhw'},
                                 { thumbnail: '/thumbnail-4.png', videoId: 'rZGGvNNlti0'},
@@ -89,7 +90,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                             {[
-                                // '1db8vaP4XU8',
+                                '1db8vaP4XU8',
                                 'IUw3_E9rjak',
                                 'e6YBjjP686o', 
                                 '09XrLKx461A', 
