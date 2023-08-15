@@ -40,7 +40,7 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-b from-fuchsia-300 to-purple-400 overflow-y-auto p-5 h-screen">
+        <div className="bg-gradient-to-b from-fuchsia-300 to-purple-400 p-5 min-h-screen">
              <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-2">
                 <div className="mt-8" ref={recentUploadsRef}>
                     <a href="https://www.youtube.com/@ReMinFanMedia/videos" target="_blank" rel="noopener noreferrer" className='hover:underline'>
