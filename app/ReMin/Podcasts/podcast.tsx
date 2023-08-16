@@ -55,6 +55,7 @@ const Body: React.FC = () => {
                             </a>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     {[
+                                        { thumbnail: '/thumbnail-8.png', videoId: 'oEng4dtvr28'},
                                         { thumbnail: '/thumbnail-6.png', videoId: 'IEUjvBagcwo'}
                                     ].map((item, idx) => (
                                         <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
