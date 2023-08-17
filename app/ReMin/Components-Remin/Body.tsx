@@ -81,7 +81,7 @@ const Body: React.FC = () => {
                             ))}
                         </div>
                         <div className='flex justify-center mt-4'>
-                        <Link href="/ReMin/Videos#uploads" className=" bg-white text-purple-600 px-6 w-screen text-center text-lg py-2 rounded-full mt-4 hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out">View More</Link>
+                            <Link href="/ReMin/Videos#uploads" className=" bg-white text-purple-600 w-screen text-center text-lg py-2 rounded-full mt-4 hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out">View More</Link>
                         </div>
                 </div>   
                         

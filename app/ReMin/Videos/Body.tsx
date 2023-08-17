@@ -64,9 +64,9 @@ const Body: React.FC = () => {
                             </div>
                     </div>
 
-                    <div className="my-8 h-1 bg-white" ></div>
+                    <div className="my-8 h-1 bg-white" id="uploads"></div>
 
-                <div className="mt-8 mb-8" ref={recentUploadsRef} id="uploads">
+                <div className="mt-8 mb-8" ref={recentUploadsRef} >
                     <a href="https://www.youtube.com/@ReMinFanMedia/videos" target="_blank" rel="noopener noreferrer" className='hover:underline'>
                             <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Uploads</h1>
                         </a>
