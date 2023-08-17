@@ -53,18 +53,20 @@ const Body: React.FC = () => {
                         <a href="https://www.youtube.com/@ReMinFanMedia/videos" target="_blank" rel="noopener noreferrer" className='hover:underline'>
                                 <h1 className={`text-white text-3xl font-bold mb-8 ${recentUploadsVisible ? 'animate-fade-right animate-once animate-ease-in-out' : ''}`}>Podcasts</h1>
                             </a>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {[
-                                        { thumbnail: '/thumbnail-8.png', videoId: 'oEng4dtvr28'},
-                                        { thumbnail: '/thumbnail-6.png', videoId: 'IEUjvBagcwo'}
-                                    ].map((item, idx) => (
-                                        <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative">
-                                            <div className="aspect-w-16 aspect-h-9">
-                                                <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg hover:scale-105 transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
-                                            </div>
-                                        </a>
-                                    ))}
-                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {[
+                                { thumbnail: '/thumbnail-8.png', videoId: 'oEng4dtvr28', title: 'BARÇA IS A MEME...😂 - The ReMin Podcast Second Preview'},
+                                { thumbnail: '/thumbnail-6.png', videoId: 'IEUjvBagcwo', title: 'SPAIN IS NOT RACIST...Vinicius Jr. and the fight against racism👊 – The ReMin Podcast First Preview'},
+                            ].map((item, idx) => (
+                                <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative group block ">
+                                    <div className="aspect-w-16 aspect-h-9 mb-2 hover:scale-105">
+                                        <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
+                                        <p className="text-white text-lg font-bold text-left pt-3 ">{item.title}</p>
+                                    </div>
+                                    
+                                </a>                              
+                            ))}
+                        </div>
                     </div>   
                 </div>
             </div>
