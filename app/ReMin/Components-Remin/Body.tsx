@@ -94,6 +94,8 @@ const Body: React.FC = () => {
                         </a>
                         <div className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                             {[
+                                '7AVQ8vE2Vw4',
+                                'HXIJee4ONBQ',
                                 '1db8vaP4XU8',
                                 'IUw3_E9rjak',
                                 'e6YBjjP686o', 
