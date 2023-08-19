@@ -49,6 +49,7 @@ const Body: React.FC = () => {
                             </a>
                             <div id="uploads" className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                                 {[
+                                    'pW1Ku2Hepyg',
                                     '7AVQ8vE2Vw4',
                                     'HXIJee4ONBQ',
                                     '1db8vaP4XU8',
@@ -74,6 +75,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-11.png', videoId: 'GhNuYNJnHP4', title: "Laporta's PR Stunts, The Negreira Case...👀 – The ReMin Podcast Last Preview"},
                                 { thumbnail: '/thumbnail-10.png', videoId: 'MtaDVi9767M', title: 'Champions League Disaster: Real Madrid vs Man City Second Leg - Peña Madridista Sur de Florida Vlog'},
                                 { thumbnail: '/thumbnail-9.png', videoId: '937wHQy-3kg', title: 'Fans rave about Bellingham, Unfiltered PSG Fan Opinions on Kylian Mbappé - LaLiga Bar Crawl Vlog!'},
                                 { thumbnail: '/thumbnail-8.png', videoId: 'oEng4dtvr28', title: 'BARÇA IS A MEME...😂 - The ReMin Podcast Second Preview'},
