@@ -55,6 +55,7 @@ const Body: React.FC = () => {
                             </a>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-12.png', videoId: '8-57_gGqcYQ', title: 'How do we replace Benzema? | The ReMin Podcast'},
                                 { thumbnail: '/thumbnail-11.png', videoId: 'GhNuYNJnHP4', title: "Laporta's PR Stunts, The Negreira Case...👀 – The ReMin Podcast Last Preview"},
                                 { thumbnail: '/thumbnail-8.png', videoId: 'oEng4dtvr28', title: 'BARÇA IS A MEME...😂 - The ReMin Podcast Second Preview'},
                                 { thumbnail: '/thumbnail-6.png', videoId: 'IEUjvBagcwo', title: 'SPAIN IS NOT RACIST...Vinicius Jr. and the fight against racism👊 – The ReMin Podcast First Preview'},
