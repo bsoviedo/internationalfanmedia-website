@@ -75,6 +75,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-13.png', videoId: 'uJ7Aj38GciQ', title: 'Barça Fan Confessions: This Madrid team... | LaLiga Match Day 2 Postgame Fan Interview'},
                                 { thumbnail: '/thumbnail-12.png', videoId: '8-57_gGqcYQ', title: 'How do we replace Benzema? | The ReMin Podcast'},
                                 { thumbnail: '/thumbnail-11.png', videoId: 'GhNuYNJnHP4', title: "Laporta's PR Stunts, The Negreira Case...👀 – The ReMin Podcast Last Preview"},
                                 { thumbnail: '/thumbnail-10.png', videoId: 'MtaDVi9767M', title: 'Champions League Disaster: Real Madrid vs Man City Second Leg - Peña Madridista Sur de Florida Vlog'},
@@ -93,7 +94,6 @@ const Body: React.FC = () => {
                                         <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
                                         <p className="text-white text-lg font-bold text-left pt-3 ">{item.title}</p>
                                     </div>
-                                    
                                 </a>                              
                             ))}
                         </div>
