@@ -66,17 +66,16 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-15.png', videoId: '0e17tzVH9JU&t', title: "Madridistas' Postgame Reactions: With this team... | LaLiga Match Day #2 Post Game Fan Interviews!"},
                                 { thumbnail: '/thumbnail-14.png', videoId: 'j_aEskKHZ2E', title: 'Another Bellingham Masterclass | LaLiga Match Day #2 Vlog and Live Fan Cam Reactions'},
                                 { thumbnail: '/thumbnail-13.png', videoId: 'uJ7Aj38GciQ', title: 'Barça Fan Confessions: This Madrid team... | LaLiga Match Day 2 Postgame Fan Interview'},
                                 { thumbnail: '/thumbnail-12.png', videoId: '8-57_gGqcYQ', title: 'How do we replace Benzema? | The ReMin Podcast'},
-                                { thumbnail: '/thumbnail-11.png', videoId: 'GhNuYNJnHP4', title: "Laporta's PR Stunts, The Negreira Case...👀 – The ReMin Podcast Last Preview"},
                             ].map((item, idx) => (
                                 <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative group block ">
                                     <div className="aspect-w-16 aspect-h-9 mb-2 hover:scale-105">
                                         <img src={item.thumbnail} alt={`Vid-${idx + 1}`} className={`object-cover w-full h-full rounded-lg transition duration-150 ease-in-out shadow-lg ${recentUploadsVisible ? 'animate-fade animate-once animate-ease-in' : ''}`} />
                                         <p className="text-white text-lg font-bold text-left pt-3 ">{item.title}</p>
                                     </div>
-                                    
                                 </a>                              
                             ))}
                         </div>
@@ -94,6 +93,9 @@ const Body: React.FC = () => {
                         </a>
                         <div className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                             {[
+                                'idGe9A7-WvQ',
+                                'nEOaoY-qgas',
+                                '0kMO8JenhnY',
                                 'pW1Ku2Hepyg',
                                 '7AVQ8vE2Vw4',
                                 'HXIJee4ONBQ',
