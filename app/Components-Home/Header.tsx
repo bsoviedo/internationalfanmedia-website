@@ -24,7 +24,7 @@ export default function Header() {
         );
     };
     return (
-        <header className="sticky top-0 z-50" id="header">
+        <header className="sticky top-0 z-50 border-gray-200" id="header">
             <nav className="bg-white px-4 lg:px-6 py-4 dark:bg-white-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <a href="/" className="flex items-center">
