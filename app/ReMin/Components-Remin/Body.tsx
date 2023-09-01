@@ -48,7 +48,7 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-purple-500 p-5 min-h-screen">
+        <div className="bg-violet-500 p-5 min-h-screen">
                 <div className="mx-auto max-w-screen-xl px-4 lg:px-0 pt-5">
     
                     {/* Responsive Video */}
