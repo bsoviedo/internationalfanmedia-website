@@ -3,7 +3,7 @@
 export default function ContactUs() {
     return(
         <section className="bg-blue-900 dark:bg-white-900">
-            <div className="h-screen py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div className="h-full py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white-900 dark:text-white">Contact Us</h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-white-500 dark:text-white-400 sm:text-xl"></p>
                 <form action="#" className="space-y-8">
