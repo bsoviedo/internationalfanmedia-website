@@ -1,8 +1,9 @@
 import TopHeader from './Components-Home/Top-Header'
 import Header from './Components-Home/Header'
-import Body from './Components-Home/Body'
+import Teams from './Components-Home/FCTeams'
 import Footer from './Components-Home/Footer'
 import AboutUs from './Components-Home/AboutUs'
+import ContactUs from './Components-Home/ContactUs'
 
 
 export default function Page() {
@@ -11,11 +12,14 @@ export default function Page() {
           <TopHeader/>
           <Header/>
           <div className='snap-y snap-mandatory overflow-scroll h-screen '>
-            <div className='snap-center'>
-              <Body/>
+            <div className='snap-start'>
+              <Teams/>
             </div>
-            <div className='snap-center'>
+            <div className='snap-start'>
               <AboutUs/>
+            </div>
+            <div className='snap-start'>
+              <ContactUs/>
             </div>
           </div>
           {/* <Footer/> */}
