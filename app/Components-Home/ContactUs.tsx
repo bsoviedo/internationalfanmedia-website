@@ -17,7 +17,7 @@ export default function ContactUs() {
                     </div>
                     <div className="sm:col-span-2">
                         <label  className="block mb-2 text-sm font-medium text-white-900 dark:text-white-400">Your message</label>
-                        <textarea id="message" rows="6" className="block p-2.5 w-full text-sm text-white-900 bg-white-50 rounded-lg shadow-sm border border-white-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                        <textarea id="message" className="block p-2.5 w-full text-sm text-white-900 bg-white-50 rounded-lg shadow-sm border border-white-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
                     </div>
                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                 </form>

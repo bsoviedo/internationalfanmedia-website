@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/ReMin/Components-Remin/ActiveLink.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/ReMin/Components-Remin/ActiveLink.js", "app/ReMin/Match-Center/LeaugeTable.jsx"],
   "exclude": ["node_modules"]
 }
