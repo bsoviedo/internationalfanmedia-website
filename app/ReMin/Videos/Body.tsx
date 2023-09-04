@@ -49,6 +49,7 @@ const Body: React.FC = () => {
                             </a>
                             <div id="uploads" className={`rounded-lg overflow-x-auto whitespace-nowrap ${shortsVisible ? 'animate-fade animate-once animate-ease-in-out' : ''}`}>
                                 {[
+                                    'n-BLTgZD9KE',
                                     '0PVi3Eymor8',
                                     'a-EWzo6-ZEA',
                                     'idGe9A7-WvQ',
@@ -80,6 +81,7 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-19.png', videoId: 'sMgouNAKRUI', title: 'Champions League draw FULL LIVE REACTION! Madrid & Barça get easy draws, PSG in the group of death!'},
                                 { thumbnail: '/thumbnail-18.png', videoId: 'YfW0R1RiRcE', title: '🚨👀Vinicius injury, Bellingham carries again! | Real Madrid vs. Celta Vigo La Liga Matchday #3 Vlog'},
                                 { thumbnail: '/thumbnail-17.png', videoId: 'hIbC_5xf7Tw', title: "Rubiales Drama talk & Real Madrid vs. Celta Vigo analysis | LaLiga Match Day #3 Fan Interviews"},                            
                                 { thumbnail: '/thumbnail-16.png', videoId: 'riLEVReVfJU', title: "Exclusive Footage from protest against Luis Rubiales in favor of Jenni Hermoso 📣🚨 | Sol, Madrid"},
