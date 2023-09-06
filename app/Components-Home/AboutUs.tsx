@@ -12,7 +12,7 @@ export default function AboutUs() {
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About Us</h2>
                 <p className="font-medium text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Our crusade is to bring the local fan experience to fans all over the world, while simultaneously providing them with a platform to voice their opinion on a worldwide scale.</p>
             </div> 
-            <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+            <div className="grid gap-8 mb-6 lg:mb-16 md:grid-rows-2">
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img height={200} width={200} className=" rounded-lg sm:rounded-none sm:rounded-l-lg" src="/Picture1.png" alt="Bonnie Avatar"/>
