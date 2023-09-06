@@ -11,7 +11,7 @@ export default function Page() {
         <div>
           <TopHeader/>
           <Header/>
-          <div className='snap-y snap-mandatory overflow-scroll h-screen '>
+          <div className=''>
             <div className='snap-start'>
               <Teams/>
             </div>
