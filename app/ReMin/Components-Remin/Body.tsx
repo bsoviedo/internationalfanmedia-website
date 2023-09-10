@@ -66,10 +66,10 @@ const Body: React.FC = () => {
                         </a>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {[
+                                { thumbnail: '/thumbnail-21.png', videoId: 'F7LfqKku2_s', title: "🚨🎙️Real Madrid vs. Getafe Post Game Reactions to Jude’s last minute winner! - LaLiga Fan Interviews!"},
                                 { thumbnail: '/thumbnail-20.png', videoId: 'CxT8zJQ9Ajo', title: "The Bernabéu’s Live Reaction to Jude's 95th minute winner😍 | Real Madrid vs. Getafe Matchdday Vlog!"},
                                 { thumbnail: '/thumbnail-19.png', videoId: 'sMgouNAKRUI', title: 'Champions League draw FULL LIVE REACTION! Madrid & Barça get easy draws, PSG in the group of death!'},
                                 { thumbnail: '/thumbnail-18.png', videoId: 'YfW0R1RiRcE', title: '🚨👀Vinicius injury, Bellingham carries again! | Real Madrid vs. Celta Vigo La Liga Matchday #3 Vlog'},
-                                { thumbnail: '/thumbnail-17.png', videoId: 'hIbC_5xf7Tw', title: "Rubiales Drama talk & Real Madrid vs. Celta Vigo analysis | LaLiga Match Day #3 Fan Interviews"},                            
 
                             ].map((item, idx) => (
                                 <a href={`https://youtu.be/${item.videoId}`} key={idx} target="_blank" rel="noopener noreferrer" className="relative group block ">
