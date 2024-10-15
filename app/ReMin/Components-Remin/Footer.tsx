@@ -35,10 +35,15 @@ export default function Footer() {
                                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                                 <ul className="text-gray-600 dark:text-gray-400">
                                     <li className="mb-4">
-                                        <a href="#" className="hover:underline">Privacy Policy</a>
+                                        <a href={`${process.env.NEXT_PUBLIC_HOST}/public/docs/International fan media Privacy Policy.pdf`}  download="International_fan_media_Privacy_Policy.pdf"
+                                            className="hover:underline">Privacy Policy</a>
+                                    </li>
+                                    <li className="mb-4">
+
+                                        <a href={`${process.env.NEXT_PUBLIC_HOST}/public/docs/general_terms_and_condition.pdf`} download="general_terms_and_condition.pdf" className="hover:underline">Terms &amp; Conditions</a>
                                     </li>
                                     <li>
-                                        <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                                        <a href={`${process.env.NEXT_PUBLIC_HOST}/public/docs/International fan media Cookie Policy.pdf`} download="International fan media Cookie Policy.pdf" className="hover:underline">Cookie Policy</a>
                                     </li>
                                 </ul>
                             </div>

@@ -7,17 +7,19 @@ type CustomLinkProps = {
     href: string;
     className?: string;
     children: React.ReactNode;
+    rel?:string;
+    target?:string;
 };
 
 export default function Header() {
     const pathname = usePathname();
 
-    const CustomLink: React.FC<CustomLinkProps> = ({ href, children, className }) => {
+    const CustomLink: React.FC<CustomLinkProps> = ({ href, children, className, rel, target }) => {
         const isActive = pathname === href;
         const activeClass = isActive ? 'text-violet-500' : '';
 
         return (
-            <Link href={href}>
+            <Link href={href} rel={rel} target={target}>
                 <span className={`${className} ${activeClass} cursor-pointer`}>
                     {children}
                 </span>
@@ -44,15 +46,17 @@ export default function Header() {
                         <ul className="flex flex-col mt-4 font-bold lg:flex-row lg:space-x-8 lg:mt-0">
                             {[
                                 { href: "/ReMin", name: "HOME", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
-                                { href: "/ReMin/News", name: "NEWS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
-                                { href: "/ReMin/Match-Center", name: "MATCH CENTER", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: process.env.NEXT_PUBLIC_CONTEST_URL || '', name: "CONTEST", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+
+                              /*   { href: "/ReMin/News", name: "NEWS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
+                                { href: "/ReMin/Match-Center", name: "MATCH CENTER", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" }, */
                                 { href: "/ReMin/Videos", name: "VIDEOS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
                                 { href: "/ReMin/Podcasts", name: "PODCASTS", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
                                 { href: "/ReMin/Shop", name: "SHOP", className: "text-black border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-violet-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" },
 
                             ].map((link) => (
                                 <li key={link.name}>
-                                    <CustomLink href={link.href} className={link.className}>
+                                    <CustomLink href={link.href} className={link.className} rel="noopener noreferrer" target="_blank">
                                         {link.name}
                                     </CustomLink>
                                 </li>
