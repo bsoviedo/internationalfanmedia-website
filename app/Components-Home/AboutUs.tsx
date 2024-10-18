@@ -49,17 +49,17 @@ export default function AboutUs() {
                 </div> 
                 <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img height={200} width={200} className="rounded-lg sm:rounded-none sm:rounded-l-lg" src="/Picture2.png" alt="Jese Avatar"/>
+                        <img height={200} width={200} className="rounded-lg sm:rounded-none sm:rounded-l-lg" src="/imgs/Roy_Picture.png" alt="Jese Avatar"/>
                     </a>
                     <div className="p-5">
                         <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Jordan Lorenzo</a>
+                            <a href="#">Roy Hakim</a>
                         </h3>
-                        <span className="text-gray-500 dark:text-gray-400">Co-Founder, CCO & DME</span>
+                        <span className="text-gray-500 dark:text-gray-400">COO & Cofounder</span>
                         <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"></p>
                         <ul className="flex space-x-4 sm:mt-0">
                             <li>
-                                    <a href="" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <a href="https://www.linkedin.com/in/roy-hakim-0840732a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="currentColor"  viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>                                </a>
                                 </li>
                                 <li>
