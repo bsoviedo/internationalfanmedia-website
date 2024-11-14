@@ -69,52 +69,52 @@ const Body: React.FC = () => {
               are.
             </p>
           </div>
+          <div className="relative w-full">
+    <img
+        src="/imgs/Remin/coverPhoto.png"
+        className="w-full object-cover max-h-[400px] sm:max-h-[600px] md:max-h-[500px] lg:max-h-[700px] xl:max-h-[900px]"
+        alt="Santiago Bernabéu"
+    />
+    {/** Gradiente para pantallas pequeñas */}
+    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/90 via-white/40 to-transparent md:hidden"></div>
 
-          <div className="w-screen">
-            <img
-              src="/imgs/Remin/coverPhoto.png"
-              className="w-full h-auto object-cover"
-              alt="Santiago Bernabéu"
-            />
-            {/**Gradiente pantallas pequeñas */}
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-white/90 via-white/40 to-transparent md:hidden"></div>
-            {/**gradiente pantallas grandes y medianas */}
+    {/** Gradiente para pantallas grandes y medianas */}
+    <div className="absolute inset-0 bg-gradient-to-r from-white/100 via-white/95 to-transparent hidden md:block"></div>
+</div>
 
-            <div className="absolute inset-0 bg-gradient-to-r from-white/100 via-white/95 to-transparent hidden md:block"></div>
-          </div>
+
         </div>
-
-        <div className="relative w-full flex flex-col">
-          <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/2 md:text-left">
-            <h2 className="text-purple-600 text-3xl font-bold">Real Madrid</h2>
-            <h3 className="text-black text-3xl font-bold">
-              {" "}
-              isn't just a team{" "}
-            </h3>
-            <p className="mt-5">
-              It's a lifestyle. With Remin, you'll feel like you're seated in
-              the Bernabéu stands, chanting alongside thousands, united by
-              passion
-            </p>
-          </div>
-        </div>
+        <div className="relative w-full h-full flex flex-col">
+  <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-full md:text-center md:mt-20 lg:mt-28 xl:mt-36 flex items-center justify-center">
+    <div className="w-full max-w-screen-lg mx-auto text-center">
+      <h2 className="text-purple-600 text-3xl font-bold">Real Madrid</h2>
+      <h3 className="text-black text-3xl font-bold">
+        {" "}isn't just a team{" "}
+      </h3>
+      <p className="mt-5">
+        It's a lifestyle. With Remin, you'll feel like you're seated in
+        the Bernabéu stands, chanting alongside thousands, united by
+        passion.
+      </p>
+    </div>
+  </div>
+</div>
 
         {/* Responsive Video   src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1&mute=1&loop=1" --- enlace con autoplay
            https://www.youtube.com/embed/Ohgk9Ad7TeY?mute=1&loop=1 ---enlace sin autoplay
            */}
-        <div className="relative flex justify-center items-center shadow-2xl overflow-hidden animate-fade animate-duration-500 animate-ease-in">
-          <div className="relative w-4/5" style={{ paddingTop: "56.25%" }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1&mute=1&loop=1"
-              title="Welcome to ReMin Fan Media"
-              style={{ border: "none" }}
-              allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-
+      <div className="relative flex justify-center items-center shadow-2xl overflow-hidden animate-fade animate-duration-500 animate-ease-in mt-12 md:mt-48 lg:mt-48 xl:mt-56">
+    <div className="relative w-4/5" style={{ paddingTop: "50.25%" }}>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1&mute=1&loop=1"
+        title="Welcome to ReMin Fan Media"
+        style={{ border: "none" }}
+        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
         {/* Recent Uploads Section */}
         <div className="relative w-full flex flex-col bg-white" ref={recentUploadsRef}>
   <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/2 md:text-left">

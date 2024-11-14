@@ -60,10 +60,9 @@ export default function Header() {
                     </div>
                     {/* Menú desplegable */}
                     <div 
-    className={`lg:flex lg:w-auto lg:order-1 absolute top-20 right-0 mr-6 bg-white lg:bg-transparent lg:h-auto lg:block border-2 border-purple-500 ${isMenuOpen ? 'block' : 'hidden'}`} 
+    className={`lg:flex lg:w-auto lg:order-1 absolute ${isMenuOpen ? 'top-20 right-0 mr-6' : 'top-12 right-0 mr-6'} bg-white lg:bg-transparent lg:h-auto lg:block ${isMenuOpen ? 'border-2 border-purple-500' : ''} ${isMenuOpen ? 'block' : 'hidden'}`} 
     id="mobile-menu-2"
 >
-
 
 
 
