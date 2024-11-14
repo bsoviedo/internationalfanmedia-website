@@ -117,13 +117,16 @@ const Body: React.FC = () => {
   </div>
         {/* Recent Uploads Section */}
         <div className="relative w-full flex flex-col bg-white" ref={recentUploadsRef}>
-  <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/2 md:text-left">
-    <h2 className="text-black text-3xl font-bold">Recent Uploads</h2>
-    <p className="mt-5">
-      It's a lifestyle. With Remin, you'll feel like you're seated in the Bernabéu stands, chanting alongside thousands, united by passion
-    </p>
-  </div>
-  <div className="max-w-screen-md mx-auto p-5"> {/* Limitar el contenedor a un ancho máximo */}
+  {/* Sección de Texto */}
+  <div className="relative w-full flex flex-col justify-center items-center p-5 md:absolute md:left-0 md:top-20 md:transform md:-translate-y-1/2 md:w-full">
+  <h2 className="text-black text-3xl font-bold text-center md:text-left">Recent Uploads</h2>
+  <p className="mt-5 text-center md:text-center">
+    It's a lifestyle. With Remin, you'll feel like you're seated in the Bernabéu stands, chanting alongside thousands, united by passion.
+  </p>
+</div>
+
+  {/* Sección de Recent Uploads (Videos) */}
+  <div className="max-w-screen-md mx-auto p-5 sm:mt-20 md:mt-36"> {/* Limitar el contenedor a un ancho máximo y añadir margen superior */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {[
         { thumbnail: '/thumbnail-24.png', videoId: '9YQVFveNspM', title: "The Bernabéu’s Live Reaction to Another Late Winner by Jude!🤩 Real Madrid vs Union Berlin Vlog" },
@@ -144,7 +147,8 @@ const Body: React.FC = () => {
     </div>
   </div>
 
-  <div className="flex justify-center mt-4">
+  {/* Botón para ver más */}
+  <div className="flex justify-center mt-4 mb-10">
     <Link
       href="/ReMin/Videos#uploads"
       className="bg-purple-600 text-white w-auto text-center text-lg py-2 px-6 rounded-lg mt-4 hover:bg-purple-700 transition duration-300 ease-in-out"
@@ -153,6 +157,7 @@ const Body: React.FC = () => {
     </Link>
   </div>
 </div>
+
 
       </div>
     </div>
