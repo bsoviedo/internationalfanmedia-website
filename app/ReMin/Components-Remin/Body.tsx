@@ -89,10 +89,10 @@ const Body: React.FC = () => {
     <div className="w-full max-w-screen-lg mx-auto text-center">
       <h2 className="text-purple-600 text-3xl font-bold">Real Madrid</h2>
       <h3 className="text-black text-3xl font-bold">
-        {" "}isn't just a team{" "}
+        {" "}isn&apos;t just a team{" "}
       </h3>
       <p className="mt-5">
-        It's a lifestyle. With Remin, you'll feel like you're seated in
+        It&apos;s a lifestyle. With Remin, you&apos;ll feel like you&apos;re seated in
         the Bernabéu stands, chanting alongside thousands, united by
         passion.
       </p>
@@ -121,7 +121,7 @@ const Body: React.FC = () => {
   <div className="relative w-full flex flex-col justify-center items-center p-5 md:absolute md:left-0 md:top-20 md:transform md:-translate-y-1/2 md:w-full">
   <h2 className="text-black text-3xl font-bold text-center md:text-left">Recent Uploads</h2>
   <p className="mt-5 text-center md:text-center">
-    It's a lifestyle. With Remin, you'll feel like you're seated in the Bernabéu stands, chanting alongside thousands, united by passion.
+    It&apos;s a lifestyle. With Remin, you&apos;ll feel like you&apos;re seated in the Bernabéu stands, chanting alongside thousands, united by passion.
   </p>
 </div>
 
