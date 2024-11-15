@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Para ocultar solo la barra de desplazamiento en los navegadores basados en Webkit */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* En otros navegadores, mantenemos el scroll pero sin mostrar la barra */
+html, body {
+  overflow: scroll;  /* Permite el desplazamiento */
+  -ms-overflow-style: none;  /* Para IE y Edge */
+  scrollbar-width: none; /* Para Firefox */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
