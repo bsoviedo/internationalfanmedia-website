@@ -141,28 +141,28 @@ const Body: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 {
-                  thumbnail: "/thumbnail-24.png",
-                  videoId: "9YQVFveNspM",
+                  thumbnail: "/imgs/thumbnails/hqdefault.webp",
+                  videoId: "UaVqbh3YqvE",
                   title:
-                    "The Bernabéu’s Live Reaction to Another Late Winner by Jude!🤩 Real Madrid vs Union Berlin Vlog",
+                    "🔥BACK IN BUSINESS😤 Real Madrid vs Osasuna Bernabeu Live Crowd Reactions & 4k Highlights",
                 },
                 {
-                  thumbnail: "/thumbnail-23.png",
-                  videoId: "mG0ke8s5mjQ",
+                  thumbnail: "/imgs/thumbnails/thumbnail-2.webp",
+                  videoId: "ffzrm-Wp5Fg",
                   title:
-                    "👀 Real Madrid vs Real Sociedad Postgame Reactions: The KuboMania is Real! 😍| LaLiga Fan Interviews!",
+                    "🚨What is wrong with Real Madrid?🤔 Real Madrid vs AC Milan Post Match Fan Reactions",
                 },
                 {
-                  thumbnail: "/thumbnail-22.png",
-                  videoId: "kDvnzYNVf70",
+                  thumbnail: "/imgs/thumbnails/thumbnail-3.webp",
+                  videoId: "neiYUAmwqKQ",
                   title:
-                    "😱The Bernabéu's Live Reaction to Valverde's Stunner & KuboMania🥵 | Real Madrid vs Real Sociedad Vlog",
+                    "🌟 Who really deserves to win the Ballon d’Or?? 👀",
                 },
                 {
-                  thumbnail: "/thumbnail-21.png",
-                  videoId: "F7LfqKku2_s",
+                  thumbnail: "/imgs/thumbnails/thumbnail-4.webp",
+                  videoId: "z0HtTwERxYE",
                   title:
-                    "🚨🎙️Real Madrid vs. Getafe Post Game Reactions to Jude’s last minute winner! - LaLiga Fan Interviews!",
+                    "🚨Nightmare at the Bernabeu🫣 Real Madrid vs Barcelona El Clasico Live Crowd Reactions & 4k Highlights",
                 },
               ].map((item, idx) => (
                 <a
@@ -178,6 +178,7 @@ const Body: React.FC = () => {
                       alt={`Vid-${idx + 1}`}
                       className="object-cover w-full h-full transition duration-150 ease-in-out shadow-xl"
                     />
+                     <p className="text-black text-lg font-bold text-center pt-3 ">{item.title}</p>
                   </div>
                 </a>
               ))}
