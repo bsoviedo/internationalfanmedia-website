@@ -10,8 +10,8 @@ export default function AboutUs() {
             About Us
           </h2>
           <p className="font-medium text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            It's one thing to see it and listen to it; it's another to live it.
-            We're bringing you as close to the Real Madrid experience as
+            It&lsquo;s one thing to see it and listen to it; it&lsquo;s another to live it.
+            We&lsquo;re bringing you as close to the Real Madrid experience as
             possible, with exclusive content and the chance to actually live it
             through our Road to El Bernabeu contest.
           </p>
