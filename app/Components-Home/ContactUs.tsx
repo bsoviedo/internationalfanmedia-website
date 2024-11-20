@@ -2,26 +2,39 @@
 
 export default function ContactUs() {
     return(
-        <section className="bg-slate-900 dark:bg-white-900">
-            <div className="h-screen py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white-900 dark:text-white">Contact Us</h2>
-                <p className="mb-8 lg:mb-16 font-light text-center text-white-500 dark:text-white-400 sm:text-xl"></p>
-                <form action="#" className="space-y-8">
-                    <div>
-                        <label className="block mb-2 text-sm font-medium text-white-900 dark:text-white-300">Your email</label>
-                        <input type="email" id="email" className="shadow-sm bg-white-50 border border-white-300 text-white-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  required/>
-                    </div>
-                    <div>
-                        <label className="block mb-2 text-sm font-medium text-white-900 dark:text-white-300">Subject</label>
-                        <input type="text" id="subject" className="block p-3 w-full text-sm text-white-900 bg-white-50 rounded-lg border border-white-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"  required/>
-                    </div>
-                    <div className="sm:col-span-2">
-                        <label  className="block mb-2 text-sm font-medium text-white-900 dark:text-white-400">Your message</label>
-                        <textarea id="message" className="block p-2.5 w-full text-sm text-white-900 bg-white-50 rounded-lg shadow-sm border border-white-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                    </div>
-                    <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                </form>
+<section className="bg-slate-900 dark:bg-white-900">
+    <div className="h-screen py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 className="mb-4 text-4xl md:text-5xl lg:text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us</h2>
+        <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-lg md:text-xl lg:text-2xl dark:text-white"></p>
+        <form action="#" className="space-y-8">
+            <div>
+                <label className="block mb-2 text-sm md:text-base lg:text-2xl font-medium text-white dark:text-white">Your email</label>
+                <input type="email" id="email" 
+                    className="shadow-sm bg-slate-800 border border-gray-600 text-white text-sm md:text-base lg:text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                    required />
             </div>
-        </section>
+            <div>
+                <label className="block mb-2 text-sm md:text-base lg:text-2xl font-medium text-white dark:text-white">Subject</label>
+                <input type="text" id="subject" 
+                    className="block p-3 w-full text-sm md:text-base lg:text-lg text-white bg-slate-800 rounded-lg border border-gray-600 shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                    required />
+            </div>
+            <div className="sm:col-span-2">
+                <label className="block mb-2 text-sm md:text-base lg:text-2xl font-medium text-white dark:text-white">Your message</label>
+                <textarea id="message" 
+                    className="block p-2.5 w-full text-sm md:text-base lg:text-lg text-white bg-slate-800 rounded-lg shadow-sm border border-gray-600 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                    placeholder="Leave a comment..."></textarea>
+            </div>
+            <div className="flex flex-row items-end justify-end	">
+            <button type="submit" 
+                className="py-3 px-5 text-sm md:text-base lg:text-lg font-medium text-center text-white rounded-lg border-solid border-2 border-white-600 sm:w-fit hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700">
+                Send message
+            </button>
+            </div>
+       
+        </form>
+    </div>
+</section>
+
     )
 }

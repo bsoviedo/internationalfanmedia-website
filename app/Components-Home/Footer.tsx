@@ -13,16 +13,16 @@ export default function Footer() {
                         </div>
                             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                                 <div>
-                                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
-                                    <ul className="text-gray-600 dark:text-gray-400">
+                                    <h2 className="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Contact</h2>
+                                    <ul className="text-white-600 dark:text-gray-400">
                                         <li className="mb-4">
                                             <a href="mailto:reminfanmedia@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:underline ">Email</a>
                                         </li>
                                     </ul>
                                 </div>
                             <div>
-                                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                                <ul className="text-gray-600 dark:text-gray-400">
+                                <h2 className="mb-6 text-sm font-semibold text-white-900 uppercase dark:text-white">Follow us</h2>
+                                <ul className="text-white-600 dark:text-gray-400">
                                     <li className="mb-4">
                                         <a href="https://www.youtube.com/@ReMinFanMedia" target="_blank" rel="noopener noreferrer" className="hover:underline ">Youtube</a>
                                     </li>
