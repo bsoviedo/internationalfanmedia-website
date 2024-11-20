@@ -8,21 +8,23 @@ import ContactUs from './Components-Home/ContactUs'
 
 export default function Page() {
   return(
-        <div>
-          <TopHeader/>
-          <Header/>
-          <div className=''>
-            <div className='snap-start'>
-              <Teams/>
-            </div>
-            <div className='snap-start'>
-              <AboutUs/>
-            </div>
-            <div className='snap-start'>
-              <ContactUs/>
-            </div>
-          </div>
-          {/* <Footer/> */}
-        </div>
+  
+<div >
+  <TopHeader />
+<Header />
+<div className="flex flex-col snap-y snap-mandatory overflow-hidden flex flex-col space-y-4">
+  <div className="snap-start">
+    <Teams />
+  </div>
+  <div className="snap-start">
+    <AboutUs />
+  </div>
+  <div className="snap-start">
+    <ContactUs />
+  </div>
+</div>
+{/* <Footer /> */}
+</div>
+
       )
 }
