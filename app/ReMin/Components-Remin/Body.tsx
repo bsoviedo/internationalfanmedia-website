@@ -59,11 +59,11 @@ const Body: React.FC = () => {
     <div className="bg-white min-h-screen">
       <div className="w-full px-0 pt-5">
         <div className="relative w-full flex flex-col">
-          <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/3 md:text-left">
-            <h1 className="text-purple-600 text-4xl font-bold">
+          <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-1/3 lg:w-1/2 md:text-left">
+            <h1 className="text-purple-600 text-5xl md:text-5xl lg:text-7xl font-bold">
               Feel the Bernabéu Wherever You Are
             </h1>
-            <p className="text-lg mt-5">
+            <p className="text-lg md:text-2lg lg:text-4lg  mt-5">
               From the roars of the crowd to the thrill of every goal, Remin
               brings the Santiago Bernabéu right to you,{" "}
               <strong> Join us, no matter where you are.</strong>
@@ -86,14 +86,14 @@ const Body: React.FC = () => {
         <div className="relative w-full h-full flex flex-col">
           <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-full md:text-center md:mt-20 lg:mt-28 xl:mt-36 flex items-center justify-center">
             <div className="w-full max-w-screen-lg mx-auto text-center">
-              <h2 className="text-purple-600 text-3xl font-bold">
+              <h2 className="text-purple-600 text-3xl md:text-4xl lg:text-5xl font-bold">
                 Real Madrid
               </h2>
-              <h3 className="text-black text-3xl font-bold">
+              <h3 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold">
                 {" "}
                 isn&apos;t just a team{" "}
               </h3>
-              <p className="mt-5">
+              <p className="mt-5 text-lg">
                 It&apos;s a lifestyle. With Remin, you&apos;ll feel like
                 you&apos;re seated in the Bernabéu stands, chanting alongside
                 thousands, united by passion.
@@ -105,7 +105,7 @@ const Body: React.FC = () => {
         {/* Responsive Video   src="https://www.youtube.com/embed/Ohgk9Ad7TeY?autoplay=1&mute=1&loop=1" --- enlace con autoplay
            https://www.youtube.com/embed/Ohgk9Ad7TeY?mute=1&loop=1 ---enlace sin autoplay
            */}
-        <div className="relative flex justify-center items-center shadow-2xl overflow-hidden animate-fade animate-duration-500 animate-ease-in mt-12 md:mt-48 lg:mt-48 xl:mt-56">
+        <div className="relative flex justify-center items-center shadow-2xl overflow-hidden animate-fade animate-duration-500 animate-ease-in mt-12 md:mt-48 lg:mt-48 xl:mt-64">
           <div className="relative w-4/5" style={{ paddingTop: "50.25%" }}>
             <iframe
               className="absolute top-0 left-0 w-full h-full"
@@ -134,15 +134,12 @@ const Body: React.FC = () => {
             </p>
           </div>
 
-     
-
           {/* Sección de Recent Uploads (Videos) */}
           <div className="max-w-screen-md mx-auto p-5 sm:mt-20 md:mt-36">
             <h2 className="text-black text-3xl font-bold text-center md:text-center">
-                Youtube
-              </h2>
-              <br/>
-            {" "}
+              Youtube
+            </h2>
+            <br />{" "}
             {/* Limitar el contenedor a un ancho máximo y añadir margen superior */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
@@ -161,8 +158,7 @@ const Body: React.FC = () => {
                 {
                   thumbnail: "/imgs/thumbnails/thumbnail-3.webp",
                   videoId: "neiYUAmwqKQ",
-                  title:
-                    "🌟 Who really deserves to win the Ballon d’Or?? 👀",
+                  title: "🌟 Who really deserves to win the Ballon d’Or?? 👀",
                 },
                 {
                   thumbnail: "/imgs/thumbnails/thumbnail-4.webp",
@@ -184,7 +180,9 @@ const Body: React.FC = () => {
                       alt={`Vid-${idx + 1}`}
                       className="object-cover w-full h-full transition duration-150 ease-in-out shadow-xl"
                     />
-                     <p className="text-black text-lg font-bold text-center pt-3 ">{item.title}</p>
+                    <p className="text-black text-lg font-bold text-center pt-3 ">
+                      {item.title}
+                    </p>
                   </div>
                 </a>
               ))}
