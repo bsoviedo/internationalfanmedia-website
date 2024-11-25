@@ -41,7 +41,7 @@ const Body: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-violet-500 p-5 min-h-screen">
+        <div className="bg-white-500 p-5 min-h-screen">
 {/*             <InstagramReels/>
  */}        </div> 
     );
