@@ -86,10 +86,10 @@ const Body: React.FC = () => {
         <div className="relative w-full h-full flex flex-col">
           <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-full md:text-center md:mt-20 lg:mt-28 xl:mt-36 flex items-center justify-center">
             <div className="w-full max-w-screen-lg mx-auto text-center">
-              <h2 className="text-purple-600 text-3xl md:text-4xl lg:text-5xl font-bold">
+              <h2 className="text-purple-600 text-3xl md:text-5xl lg:text-6xl font-bold">
                 Real Madrid
               </h2>
-              <h3 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold">
+              <h3 className="text-black text-3xl md:text-3xl lg:text-4xl font-bold">
                 {" "}
                 isn&apos;t just a team{" "}
               </h3>
@@ -125,7 +125,7 @@ const Body: React.FC = () => {
           {/* Sección de Texto */}
           <div className="relative w-full flex flex-col justify-center items-center p-5 md:absolute md:left-0 md:top-20 md:transform md:-translate-y-1/2 md:w-full">
             <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left">
-              Video Uploads
+            Youtube
             </h2>
             <p className="mt-5 text-center md:text-center">
               It&apos;s a lifestyle. With Remin, you&apos;ll feel like
@@ -136,8 +136,8 @@ const Body: React.FC = () => {
 
           {/* Sección de Recent Uploads (Videos) */}
           <div className="max-w-screen-md mx-auto p-5 sm:mt-20 md:mt-36">
-            <h2 className="text-black text-3xl font-bold text-center md:text-center">
-              Youtube
+            <h2 className="text-black text-xl font-bold text-center md:text-center">
+              Video Uploads
             </h2>
             <br />{" "}
             {/* Limitar el contenedor a un ancho máximo y añadir margen superior */}
@@ -192,12 +192,54 @@ const Body: React.FC = () => {
           {/* Botón para ver más */}
           <div className="flex justify-center mt-4 mb-10">
             <Link
-              href="/ReMin/Videos#uploads"
+              href="https://www.youtube.com/@ReMinFanMedia/videos"
               className="bg-purple-600 text-white w-auto text-center text-lg py-2 px-6 rounded-lg mt-4 hover:bg-purple-700 transition duration-300 ease-in-out"
             >
               View More
             </Link>
           </div>
+
+
+           {/* Shorts Section */}
+
+           <h2 className="text-black text-xl font-bold text-center md:text-center">
+              Shorts
+            </h2>
+
+           <div className="flex justify-center mt-4 mb-10" ref={shortsRef}>
+          
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    {[
+      'kfeYGApumfg',
+      'VxrNMjO9KSg',
+      'BTX_oQxaruk',
+      'A42qCZHo5Bg'
+    ].map((videoId, idx) => (
+      <iframe 
+        key={idx} 
+        width="100%" 
+        height="500" 
+        src={`https://www.youtube.com/embed/${videoId}`} 
+        title={`Short ${idx + 1}`}
+        frameBorder="0" 
+        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" 
+        allowFullScreen 
+        className="rounded-xl transition duration-150 ease-in-out shadow-xl"
+      ></iframe>
+    ))}
+  </div>
+</div>
+
+                <div className="flex justify-center mt-4 mb-10">
+                    <Link
+                      href="https://www.youtube.com/@ReMinFanMedia/shorts"
+                      className="bg-purple-600 text-white w-auto text-center text-lg py-2 px-6 rounded-lg mt-4 hover:bg-purple-700 transition duration-300 ease-in-out"
+                    >
+                      View More
+                    </Link>
+                  </div>
+            
+           
         </div>
       </div>
     </div>
