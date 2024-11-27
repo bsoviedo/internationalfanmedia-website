@@ -63,11 +63,11 @@ const Body: React.FC = () => {
             <h1 className="text-purple-600 text-5xl md:text-5xl lg:text-7xl font-bold">
               Feel the Bernabéu Wherever You Are
             </h1>
-            <p className="text-lg md:text-2lg lg:text-4lg  mt-5">
+            <p className="text-lg md:text-2lg lg:text-3xl  mt-5">
               From the roars of the crowd to the thrill of every goal, Remin
               brings the Santiago Bernabéu right to you,{" "}
               <strong> Join us, no matter where you are.</strong>
-            </p>
+            </p> 
           </div>
 
           <div className="relative w-full">
@@ -93,7 +93,7 @@ const Body: React.FC = () => {
                 {" "}
                 isn&apos;t just a team{" "}
               </h3>
-              <p className="mt-5 text-lg">
+              <p className="mt-5 text-lg lg:text-xl">
                 It&apos;s a lifestyle. With Remin, you&apos;ll feel like
                 you&apos;re seated in the Bernabéu stands, chanting alongside
                 thousands, united by passion.
@@ -124,10 +124,10 @@ const Body: React.FC = () => {
         >
           {/* Sección de Texto */}
           <div className="relative w-full flex flex-col justify-center items-center p-5 md:absolute md:left-0 md:top-20 md:transform md:-translate-y-1/2 md:w-full">
-            <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left">
+            <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left md:text-4xl">
             Youtube
             </h2>
-            <p className="mt-5 text-center md:text-center">
+            <p className="mt-5 text-center md:text-center md:text-xl">
               It&apos;s a lifestyle. With Remin, you&apos;ll feel like
               you&apos;re seated in the Bernabéu stands, chanting alongside
               thousands, united by passion.
@@ -136,7 +136,7 @@ const Body: React.FC = () => {
 
           {/* Sección de Recent Uploads (Videos) */}
           <div className="max-w-screen-md mx-auto p-5 sm:mt-20 md:mt-36">
-            <h2 className="text-black text-xl font-bold text-center md:text-center">
+            <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl">
               Video Uploads
             </h2>
             <br />{" "}
@@ -202,7 +202,7 @@ const Body: React.FC = () => {
 
            {/* Shorts Section */}
 
-           <h2 className="text-black text-xl font-bold text-center md:text-center">
+           <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl">
               Shorts
             </h2>
 
