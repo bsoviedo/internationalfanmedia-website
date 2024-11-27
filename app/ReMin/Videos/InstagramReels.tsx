@@ -1,61 +1,50 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-const InstagramReels = () => {
-  const [isClient, setIsClient] = useState(false);
-
+const InstagramThumbnail = () => {
   const reels = [
-    'https://www.instagram.com/reminfanmedia/reel/DCxEoD6uaUn/',
-    'https://www.instagram.com/reminfanmedia/reel/CGfLaX2DZhM/',
-    'https://www.instagram.com/reminfanmedia/reel/DCyAb7xoe9P/',
+    {
+      url: 'https://www.instagram.com/reel/DCxEoD6uaUn/',
+      thumbnail: '/imgs/thumbnails/instagram/1_instagram.png',
+    },
+    {
+      url: 'https://www.instagram.com/reminfanmedia/reel/DCuwrlsIvFC/',
+      thumbnail: '/imgs/thumbnails/instagram/2_instagram.png',
+    },
+    {
+      url: 'https://www.instagram.com/reminfanmedia/reel/DCr23w7uzyR/',
+      thumbnail: '/imgs/thumbnails/instagram/3_instagram.png',
+    },
+    {
+      url: 'https://www.instagram.com/reminfanmedia/reel/DChqiMLurVO/',
+      thumbnail: '/imgs/thumbnails/instagram/4_instagram.png',
+    },
   ];
 
-  useEffect(() => {
-    setIsClient(true);
-    
-    // Cargar el script de Instagram solo en el cliente
-    const loadInstagramEmbed = () => {
-        //@ts-ignore
-      if (window.instgrm) {
-        //@ts-ignore
-        window.instgrm.Embeds.process();
-      }
-    };
-
-    if (!document.querySelector('script[src="//www.instagram.com/embed.js"]')) {
-      const script = document.createElement('script');
-      script.src = '//www.instagram.com/embed.js';
-      script.async = true;
-      script.onload = loadInstagramEmbed;
-      document.body.appendChild(script);
-    } else {
-      loadInstagramEmbed();
-    }
-  }, []);
-
-  // Solo renderizar el contenido cuando estamos en el cliente
-  if (!isClient) {
-    return null; // No renderizar nada en el servidor
-  }
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center text-white mb-8">Instagram Reels</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {reels.map((reel, idx) => (
-          <div
-            key={idx}
-            className="instagram-embed-container rounded-lg overflow-hidden shadow-lg bg-gray-800 p-4"
-          >
-            <blockquote
-              className="instagram-media w-full"
-              data-instgrm-permalink={reel}
-              data-instgrm-version="14"
-            ></blockquote>
-          </div>
-        ))}
-      </div>
+    <div className="container mx-auto px-4 py-8 flex flex-col items-center">
+    <h2 className="text-purple-600 text-3xl font-bold text-center md:text-4xl mb-4">
+      Instagram Reels
+    </h2>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {reels.map((reel, idx) => (
+        <a
+          key={idx}
+          href={reel.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-lg overflow-hidden shadow-lg bg-gray-800"
+        >
+          <img
+            src={reel.thumbnail}
+            alt={`Instagram Reel ${idx + 1}`}
+            className="w-full h-75"
+          />
+        </a>
+      ))}
     </div>
+  </div>
   );
 };
 
-export default InstagramReels;
+export default InstagramThumbnail;

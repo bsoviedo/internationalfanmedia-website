@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
 import InstagramReels from './InstagramReels';
+import TikTokVideos from './TikTokVideos';
 
 const Body: React.FC = () => {
     // States to manage visibility
@@ -42,8 +43,10 @@ const Body: React.FC = () => {
 
     return (
         <div className="bg-white-500 p-5 min-h-screen">
-{/*             <InstagramReels/>
- */}        </div> 
+            <InstagramReels/>
+
+            <TikTokVideos/>
+        </div> 
     );
 }
 
