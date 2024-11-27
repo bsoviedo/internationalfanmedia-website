@@ -13,7 +13,7 @@ export default function AboutUs() {
             It&lsquo;s one thing to see it and listen to it; it&lsquo;s another
             to live it. We&lsquo;re bringing you as close to the Real Madrid
             experience as possible, with exclusive content and the chance to
-            actually live it through our Road to El Bernabeu contest.
+            actually live it through our Road to the Bernabeu contest.
           </p>
         </div>
 
