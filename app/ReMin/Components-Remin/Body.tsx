@@ -201,8 +201,8 @@ const Body: React.FC = () => {
 
            {/* Shorts Section */}
 
-           <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl">
-              Shorts
+           <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl lg:text-4xl">
+           Shorts
             </h2>
 
            <div className="flex justify-center mt-4 mb-10" ref={shortsRef}>
