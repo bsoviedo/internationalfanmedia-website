@@ -13,8 +13,7 @@ const Body: React.FC = () => {
   // Refs to track divs
   const recentUploadsRef = useRef<HTMLDivElement | null>(null);
   const shortsRef = useRef<HTMLDivElement | null>(null);
-  const divider1Ref = useRef<HTMLDivElement | null>(null);
-  const divider2Ref = useRef<HTMLDivElement | null>(null);
+ 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -86,14 +85,14 @@ const Body: React.FC = () => {
         <div className="relative w-full h-full flex flex-col">
           <div className="relative z-10 p-5 text-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:w-full md:text-center md:mt-20 lg:mt-28 xl:mt-36 flex items-center justify-center">
             <div className="w-full max-w-screen-lg mx-auto text-center">
-              <h2 className="text-purple-600 text-3xl md:text-5xl lg:text-6xl font-bold">
+              <h2 className="text-purple-600 text-5xl md:text-5xl lg:text-7xl font-bold">
                 Real Madrid
               </h2>
-              <h3 className="text-black text-3xl md:text-3xl lg:text-4xl font-bold">
+              <h3 className="text-black text-3xl md:text-3xl lg:text-5xl font-bold">
                 {" "}
                 isn&apos;t just a team{" "}
               </h3>
-              <p className="mt-5 text-lg lg:text-xl">
+              <p className="text-lg md:text-2lg lg:text-3xl  mt-5">
                 It&apos;s a lifestyle. With Remin, you&apos;ll feel like
                 you&apos;re seated in the Bernabéu stands, chanting alongside
                 thousands, united by passion.
@@ -124,7 +123,7 @@ const Body: React.FC = () => {
         >
           {/* Sección de Texto */}
           <div className="relative w-full flex flex-col justify-center items-center p-5 md:absolute md:left-0 md:top-20 md:transform md:-translate-y-1/2 md:w-full">
-            <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left md:text-4xl">
+            <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left md:text-5xl lg:text-6xl">
             Youtube
             </h2>
             <p className="mt-5 text-center md:text-center md:text-xl">
@@ -136,8 +135,8 @@ const Body: React.FC = () => {
 
           {/* Sección de Recent Uploads (Videos) */}
           <div className="max-w-screen-md mx-auto p-5 sm:mt-20 md:mt-36">
-            <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl">
-              Video Uploads
+            <h2 className="text-black text-xl font-bold text-center md:text-center md:text-3xl lg:text-4xl">
+              Videos
             </h2>
             <br />{" "}
             {/* Limitar el contenedor a un ancho máximo y añadir margen superior */}
