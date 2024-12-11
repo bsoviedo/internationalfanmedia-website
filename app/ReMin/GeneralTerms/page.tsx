@@ -195,7 +195,7 @@ function page() {
               MEDIA, SL Platforms and/or information, data, text, software,
               music, sound, photographs, graphics, video, messages, feeds and
               any other material on the INTERNATIONAL FAN MEDIA, SL Platforms
-              ("Content") are appropriate for your child. INTERNATIONAL FAN
+              (&ldquo;Content&ldquo;) are appropriate for your child. INTERNATIONAL FAN
               MEDIA, SL disclaims any liability in this respect.
             </li>
             <li className=" mb-2">
@@ -205,13 +205,13 @@ function page() {
                   6.1- The INTERNATIONAL FAN MEDIA, SL Platforms include: (i)
                   Content provided by INTERNATIONAL FAN MEDIA, SL; and (ii)
                   Content that may be posted by users of the INTERNATIONAL FAN
-                  MEDIA, SL Platforms ("User Submissions").
+                  MEDIA, SL Platforms (&ldquo;User Submissions&ldquo;).
                 </li>
                 <li className="mb-2">
                   6.2- All Content provided by INTERNATIONAL FAN MEDIA, SL is
                   owned by, or licensed to, INTERNATIONAL FAN MEDIA, SL. Content
-                  provided by INTERNATIONAL FAN MEDIA, SL is provided to you "AS
-                  IS" and may not be used, reproduced, distributed, transmitted,
+                  provided by INTERNATIONAL FAN MEDIA, SL is provided to you &ldquo;AS
+                  IS&ldquo; and may not be used, reproduced, distributed, transmitted,
                   broadcast, displayed, sold, licensed or otherwise exploited
                   for any other purposes than your personal access and viewing
                   of the Content on the INTERNATIONAL FAN MEDIA, SL Platforms.
@@ -345,7 +345,7 @@ function page() {
                   competitions, the INTERNATIONAL FAN MEDIA, SL event marks and
                   product and service names are trademarks and copyright
                   material of INTERNATIONAL FAN MEDIA, SL (
-                  <strong>"INTERNATIONAL FAN MEDIA, SL Marks"</strong>).
+                  <strong>&ldquo;INTERNATIONAL FAN MEDIA, SL Marks&ldquo;</strong>).
                 </li>
                 <li className="mb-2">
                   8.2- Nothing in the INTERNATIONAL FAN MEDIA, SL Platforms is
@@ -405,7 +405,7 @@ function page() {
                   10.4- By accessing or using the INTERNATIONAL FAN MEDIA, SL
                   Platforms, including the provision of your Personal
                   Information, you acknowledge and agree that the terms of
-                  INTERNATIONAL FAN MEDIA, SL’s{" "}
+                  INTERNATIONAL FAN MEDIA, SL&quot;s{" "}
                   <a
                     style={{ color: "blue" }}
                     href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/privacyPolicy`} 
@@ -432,7 +432,7 @@ function page() {
                     11.1- If you access and use our Platforms, you do so at your
                     sole risk. The INTERNATIONAL FAN MEDIA, SL Platforms, and
                     the INTERNATIONAL FAN MEDIA, SL Content is provided on an
-                    "as is" and "as available" basis. INTERNATIONAL FAN MEDIA,
+                    &ldquo;as is&ldquo; and &ldquo;as available&ldquo; basis. INTERNATIONAL FAN MEDIA,
                     SL makes no representation that material on the
                     INTERNATIONAL FAN MEDIA, SL Platforms is appropriate or
                     available for use in any specific jurisdiction. You are
@@ -673,7 +673,7 @@ function page() {
 
             <li>
               The Competition comprises two ways to score points – one in the
-              form of a ‘predictor’ game and the other in the form of engagement
+              form of a &ldquo;predictor&ldquo; game and the other in the form of engagement
               with Internationla Fan Media, SL weekly content, both of which are
               available via the Web Application (Participants may play either or
               both ways games knowing chances to win are higher with he later).
@@ -708,7 +708,7 @@ with historic value for El Real Madrid.
             </h4>
 
             <ol style={{listStyleType:"numeric"}}>
-  <li>"Futbol" Prediction Rules
+  <li>&ldquo;Futbol&ldquo; Prediction Rules
     <ol style={{ listStyleType: "lower-alpha" }}>
       <li>Local Liga
         <ol style={{ listStyleType: "lower-roman" }}>
