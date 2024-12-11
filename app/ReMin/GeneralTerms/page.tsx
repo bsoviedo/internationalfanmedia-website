@@ -679,7 +679,7 @@ function page() {
               both ways games knowing chances to win are higher with he later).
               In order to enter the Competition each Participant must:
 
-              <ul className="mt-2 mb-2" style={{listStyle:'initial'}}>
+              <ul className="mt-2 mb-2" style={{listStyle:"initial"}}>
                 <li>Open the Web Application; 
                 </li>
                 <li> Register with the following Personal Information from you: (i) Name;
@@ -704,14 +704,14 @@ with historic value for El Real Madrid.
             </li>
 
             <h4 className="text-md font-semibold text-left mb-6 text-blue-700 mt-3">
-            Remin's Road To El Bernabeu Scoring 
+            Remin&quot;s Road To El Bernabeu Scoring 
             </h4>
 
-            <ol style={{listStyleType:'numeric'}}>
+            <ol style={{listStyleType:"numeric"}}>
   <li>"Futbol" Prediction Rules
-    <ol style={{ listStyleType: 'lower-alpha' }}>
+    <ol style={{ listStyleType: "lower-alpha" }}>
       <li>Local Liga
-        <ol style={{ listStyleType: 'lower-roman' }}>
+        <ol style={{ listStyleType: "lower-roman" }}>
           <li>Points per Match: You will only predict Real Madrid matches for the entire season
             <ol>
               <li>Correct match result: 5 points</li>
@@ -739,7 +739,7 @@ with historic value for El Real Madrid.
         </ol>
       </li>
       <li>League of European Champions
-        <ol style={{ listStyleType: 'lower-roman' }}>
+        <ol style={{ listStyleType: "lower-roman" }}>
           <li>Points per Match: Real Madrid games will be the only games predicted in the Group Stage
             <ol>
               <li>Correct match result of a group stage match: 3 points</li>
@@ -768,14 +768,14 @@ with historic value for El Real Madrid.
     </ol>
   </li>
   <li>Community Engagement Points
-    <ol style={{ listStyleType: 'lower-alpha' }}>
+    <ol style={{ listStyleType: "lower-alpha" }}>
       <li>Clue of the Week Points
-        <ol style={{ listStyleType: 'lower-roman' }}>
+        <ol style={{ listStyleType: "lower-roman" }}>
           <li>Correct Clue of the Week input: 15 points</li>
         </ol>
       </li>
       <li>Bonus Points
-        <ol style={{ listStyleType: 'lower-roman' }}>
+        <ol style={{ listStyleType: "lower-roman" }}>
           <li>If you follow us on Instagram: 15 points</li>
           <li>If you follow us on TikTok: 15 points</li>
           <li>If you subscribe to our YouTube Channel: 30 points</li>
@@ -786,7 +786,7 @@ with historic value for El Real Madrid.
   </li>
 
   <li>Final Tie Breaker
-    <ol style={{ listStyleType: 'lower-alpha' }}>
+    <ol style={{ listStyleType: "lower-alpha"}}>
       <li>In case of a tie, the winner will be the participant who entered the competition earlier.
        
       </li>
@@ -835,9 +835,9 @@ INTERNATIONAL FAN MEDIA, SL will notify the winners of the
 Main Prize and the Spot Prize via email to the email address they
 provided as part of the registration process at the end of the
 Competition Period. INTERNATIONAL FAN MEDIA, SL shall have no
-liability for a winner's failure to receive notices due to any reason
-whatsoever, including but not limited to winners' spam, junk e-mail or
-other security settings or for winners' provision of incorrect or
+liability for a winner&quot;s failure to receive notices due to any reason
+whatsoever, including but not limited to winners&quot; spam, junk e-mail or
+other security settings or for winners&quot; provision of incorrect or
 otherwise non-functioning contact information. If the selected winners
 cannot be contacted, are ineligible or fail to claim the Prizes within
 ninety-six (96) hours from the time the award notification was sent, the

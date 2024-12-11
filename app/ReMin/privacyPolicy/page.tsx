@@ -49,7 +49,7 @@ export default function Page() {
                 WHAT THIS PRIVACY POLICY COVERS
               </p>
               <br />
-              This Privacy Policy applies to INTERNATIONAL FAN MEDIA, SL's
+              This Privacy Policy applies to INTERNATIONAL FAN MEDIA, SL&quot;s
               processing of your personal data when you visit and use any
               INTERNATIONAL FAN MEDIA, SL website, app or service which links to
               this Privacy Policy. This means information that identifies you
@@ -61,9 +61,9 @@ export default function Page() {
               <p className="font-bold mb-2">
                 “INTERNATIONAL FAN MEDIA, SL Platforms”.
               </p>
-              This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL's
+              This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL&quot;s
               collecting and processing of any personal data that INTERNATIONAL
-              FAN MEDIA, SL's business partners share with INTERNATIONAL FAN
+              FAN MEDIA, SL&quot;s business partners share with INTERNATIONAL FAN
               MEDIA, SL.
             </li>
             <li className=" mb-2">
@@ -83,9 +83,9 @@ export default function Page() {
               <p className="font-bold mb-2">
                 “INTERNATIONAL FAN MEDIA, SL Platforms”.
               </p>
-              This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL's
+              This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL&quot;s
               collecting and processing of any personal data that INTERNATIONAL
-              FAN MEDIA, SL's business partners share with INTERNATIONAL FAN
+              FAN MEDIA, SL&quot;s business partners share with INTERNATIONAL FAN
               MEDIA, SL.
               <br />
               <br />
@@ -216,7 +216,7 @@ export default function Page() {
               account or not by just browsing our servers. INTERNATIONAL FAN
               MEDIA, SL may collect, including but not limited to, your Web
               browser software, your internet protocol (IP) address which
-              identifies Your computer, INTERNATIONAL FAN MEDIA, SL's cookies,
+              identifies Your computer, INTERNATIONAL FAN MEDIA, SL&quot;s cookies,
               the referring website and the page you requested. INTERNATIONAL
               FAN MEDIA, SL may also collect information about your location,
               and your online activity on the INTERNATIONAL FAN MEDIA, SL
@@ -655,7 +655,7 @@ export default function Page() {
               Further information about your rights is set out at Section 7.
             </li>
             <li className=" mb-2">
-              <p className="font-bold text-lg">CHILDREN'S PRIVACY</p>
+              <p className="font-bold text-lg">CHILDREN&quot;S PRIVACY</p>
               The protection of personal data of children and adolescents is of
               particular concern to INTERNATIONAL FAN MEDIA, SL. The
               INTERNATIONAL FAN MEDIA, SL Platforms and their content are not

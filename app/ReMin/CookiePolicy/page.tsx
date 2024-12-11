@@ -200,7 +200,7 @@ function page() {
   <li>
     <strong>Adjusting your settings on different browsers</strong>
     <p>
-      Cookie management varies from browser to browser. Use your browser's help menu to find out how to adjust your cookie settings, or click on the relevant link below:
+      Cookie management varies from browser to browser. Use your browser&quot;s help menu to find out how to adjust your cookie settings, or click on the relevant link below:
     </p>
     <ul>
       <li>
@@ -230,13 +230,13 @@ function page() {
     <p>
       You can also block specific types of cookie without adjusting your browser settings.
     </p>
-    <ol style={{ listStyleType: 'lower-alpha', marginLeft: '20px' }}>
+    <ol style={{ listStyleType: "lower-alpha", marginLeft: "20px" }}>
       <li>
         <strong>Blocking audience-measuring cookies</strong>
         <p>
           Audience-measuring cookies have been placed on our site by Google Analytics. You can block these cookies by clicking on the deactivation link below, downloading the add-on and installing it on your browser. The add-on is compatible with Internet Explorer, Chrome, Firefox, Safari and Opera.
         </p>
-        <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
+        <ul style={{ listStyleType: "disc", marginLeft: "20px" }}>
           <li>
             <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"blue"}}>
               Google Analytics Opt-out Browser Add-on
@@ -249,7 +249,7 @@ function page() {
             </a>
           </li>
           <li>
-            For more information on Google Analytics' privacy policy, click here: 
+            For more information on Google Analytics&quot; privacy policy, click here: 
             <a href="https://support.google.com/analytics/answer/6004245?hl=fr." target="_blank" rel="noopener noreferrer" style={{color:"blue"}}>
               Safeguarding your data
             </a>
@@ -261,7 +261,7 @@ function page() {
         <p>
           To block cookies used by social networks (e.g., via sharing buttons), follow the instructions in the links below:
         </p>
-        <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
+        <ul style={{ listStyleType: "disc", marginLeft: "20px" }}>
           <li>
             <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0" target="_blank" rel="noopener noreferrer" style={{color:"blue"}}>
               Facebook
