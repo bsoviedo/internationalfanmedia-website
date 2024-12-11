@@ -29,7 +29,7 @@ export default function Page() {
           </p>
           <p className="mb-4">
             The commitments described in this privacy policy (the{" "}
-            <strong>“Privacy Policy”</strong>) fulfil the values, the principles
+            <strong>&ldquo;Privacy Policy&ldquo;</strong>) fulfil the values, the principles
             of action and behaviour of INTERNATIONAL FAN MEDIA, SL and are
             established in compliance with applicable Spanish and European laws.
           </p>
@@ -59,7 +59,7 @@ export default function Page() {
               apps, social media profiles and pages and services in this Privacy
               Policy, collectively the
               <p className="font-bold mb-2">
-                “INTERNATIONAL FAN MEDIA, SL Platforms”.
+                &ldquo;INTERNATIONAL FAN MEDIA, SL Platforms&ldquo;.
               </p>
               This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL&quot;s
               collecting and processing of any personal data that INTERNATIONAL
@@ -75,13 +75,13 @@ export default function Page() {
               in respect of your use of and interactions with the INTERNATIONAL
               FAN MEDIA, SL Platforms in order to provide you with a service, to
               respond to you and to publish and share information plus documents
-              related to football. “Personal data” means any information that
+              related to football. &ldquo;Personal data&ldquo; means any information that
               may be linked directly or indirectly to you as an individual. The
               types of Personal Data we may collect and process vary from
               INTERNATIONAL FAN MEDIA, SL Platform to INTERNATIONAL FAN MEDIA,
               SL Platform but can be summarised as follows:
               <p className="font-bold mb-2">
-                “INTERNATIONAL FAN MEDIA, SL Platforms”.
+                &ldquo;INTERNATIONAL FAN MEDIA, SL Platforms&ldquo;.
               </p>
               This Privacy Policy also covers INTERNATIONAL FAN MEDIA, SL&quot;s
               collecting and processing of any personal data that INTERNATIONAL
@@ -623,7 +623,7 @@ export default function Page() {
               confidential e-mail messages or information which are not
               encrypted, you accept the risk of such uncertainty and possible
               lack of confidentiality over the Internet. Identity theft and the
-              practice currently known as “phishing” are of great concern to
+              practice currently known as &ldquo;phishing&ldquo; are of great concern to
               INTERNATIONAL FAN MEDIA, SL. Safeguarding information to help
               protect You from identity theft is a great concern. INTERNATIONAL
               FAN MEDIA, SL do not and will not, at any time, request your

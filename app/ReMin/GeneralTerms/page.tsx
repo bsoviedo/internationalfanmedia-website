@@ -12,12 +12,12 @@ function page() {
         </h2>
         <div className="text-gray-700 leading-relaxed">
           <p className="mb-4">
-            The following terms and conditions (the "Terms & Conditions") govern
+            The following terms and conditions (the <strong> &ldquo;Terms & Conditions&ldquo;</strong>) govern
             your use of the websites, mobile applications, and other online and
             mobile services, including all digital content and functionality
-            contained on them, (together the “INTERNATIONAL FAN MEDIA, SL
-            Platform”) that link to or post the Terms & Conditions operated by
-            "INTERNATIONAL FAN MEDIA, SL," "we" "our" "us").
+            contained on them, (together the &ldquo;INTERNATIONAL FAN MEDIA, SL
+            Platform&ldquo;) that link to or post the Terms & Conditions operated by
+            &ldquo;INTERNATIONAL FAN MEDIA, SL,&ldquo; &ldquo;we&ldquo; &ldquo;our&ldquo; &ldquo;us&ldquo;).
           </p>
           <p className="mb-4">
             INTERNATIONAL FAN MEDIA, SL Platforms include but are not limited
@@ -65,12 +65,12 @@ function page() {
                 <li className="mb-2">
                   2.1- Certain areas of the INTERNATIONAL FAN MEDIA, SL
                   Platforms require registration to access all relevant content
-                  and/or functionality (“Restricted Areas”). By registering, you
+                  and/or functionality (&ldquo;Restricted Areas&ldquo;). By registering, you
                   represent that: (i) you are eligible for an account (by
                   reference to the eligibility criteria included in Section 2.2
                   below); and (ii) the information you include about yourself
-                  (as part of the registration process) (your “Personal
-                  Information”) is true, accurate, current and complete (and you
+                  (as part of the registration process) (your &ldquo;Personal
+                  Information&ldquo;) is true, accurate, current and complete (and you
                   undertake to maintain such Personal Information during the
                   time you have a INTERNATIONAL FAN MEDIA, SL account).{" "}
                 </li>
@@ -591,14 +591,14 @@ function page() {
             <li>
               {" "}
               These Rules apply to the free competition without obligation of
-              purchase named “REMIN Road to El Bernabeu” (hereinafter{" "}
-              <strong>“the Competition”</strong>), which is run by International
-              FAN Media (<strong>“We”</strong>, <strong>“Our”</strong>), a
+              purchase named &ldquo;REMIN Road to El Bernabeu&ldquo; (hereinafter{" "}
+              <strong>&ldquo;the Competition&ldquo;</strong>), which is run by International
+              FAN Media (<strong>&ldquo;We&ldquo;</strong>, <strong>&ldquo;Our&ldquo;</strong>), a
               Spanish Sociedad Limitada located in Madrid, Spain.
             </li>
             <li>
               The Competition will take place in the 2024/2025 European Futbol
-              Season (the <strong>“Competition Period”</strong>).
+              Season (the <strong>&ldquo;Competition Period&ldquo;</strong>).
             </li>
 
             <h4 className="text-md font-semibold text-left mb-6 text-blue-700 mt-3">
@@ -617,7 +617,7 @@ function page() {
             <li>
               Children under the age of thirteen (13) are not permitted to
               participate in a Game. Participants between thirteen (13) and
-              eighteen (18) years of age (<strong>“Minors”</strong>) must seek
+              eighteen (18) years of age (<strong>&ldquo;Minors&ldquo;</strong>) must seek
               parental permission before participating in the Game. UEFA will
               not knowingly allow children under the age of thirteen (13) or
               Minors without parental permission to register for a Game.
@@ -631,8 +631,8 @@ function page() {
             <li>
               Every application to participate in the Competition must be made
               by a natural person permitted to enter the Competition pursuant to
-              paragraphs 4 and 5 above (<strong>“Participant”</strong>,{" "}
-              <strong>“You”</strong>,<strong> “Your”</strong>) by registering on
+              paragraphs 4 and 5 above (<strong>&ldquo;Participant&ldquo;</strong>,{" "}
+              <strong>&ldquo;You&ldquo;</strong>,<strong> &ldquo;Your&ldquo;</strong>) by registering on
               the International Fan Media Web Application.
             </li>
 
@@ -693,7 +693,7 @@ function page() {
 
             <li>
             The participant must fill his/her general futbol predictions. By
-clicking on the “Predict” button within the Web Applicaton, the
+clicking on the &ldquo;Predict&ldquo; button within the Web Applicaton, the
 Participant confirms their registration and becomes eligible to enter
 the Competition subject to these Rules. The Participant must remain
 engaged with International Fan Media, SL’s Media Channels/Social

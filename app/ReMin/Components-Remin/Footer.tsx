@@ -45,7 +45,7 @@ export default function Footer() {
                                         <a href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/GeneralTerms`}  className="hover:underline">Terms &amp; Conditions</a>
                                     </li>
                                     <li>
-                                        <a href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/CookiePolicy`}className="hover:underline">Cookie Policy</a>
+                                        <a href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/CookiePolicy`} className="hover:underline">Cookie Policy</a>
                                     </li>
                                 </ul>
                             </div>
