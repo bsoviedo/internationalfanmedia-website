@@ -39,7 +39,7 @@ function page() {
                 This cookie policy should be read together with our{" "}
                 <a
                   style={{ color: "blue" }}
-                  href="https://internationalfanmedia.com/ReMin/privacyPolicy"
+                 href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/privacyPolicy`}
                 >
                   {" "}
                   INTERNATIONAL FAN MEDIA, SL Privacy Policy{" "}

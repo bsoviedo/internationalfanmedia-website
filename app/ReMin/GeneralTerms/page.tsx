@@ -21,7 +21,7 @@ function page() {
           </p>
           <p className="mb-4">
             INTERNATIONAL FAN MEDIA, SL Platforms include but are not limited
-            to: https://www.internationalfanmedia.com/
+            to: <a href="https://www.internationalfanmedia.com/" style={{color:"blue"}}> https://www.internationalfanmedia.com/</a>
           </p>
           <p className="mb-4">
             In addition, when accessing and using a INTERNATIONAL FAN MEDIA, SL
@@ -408,7 +408,7 @@ function page() {
                   INTERNATIONAL FAN MEDIA, SL’s{" "}
                   <a
                     style={{ color: "blue" }}
-                    href="https://internationalfanmedia.com/ReMin/privacyPolicy"
+                    href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/privacyPolicy`} 
                   >
                     {" "}
                     Privacy Policy{" "}
@@ -416,7 +416,7 @@ function page() {
                   and{" "}
                   <a
                     style={{ color: "blue" }}
-                    href="https://internationalfanmedia.com/ReMin/privacyPolicy"
+                    href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/CookiePolicy`}
                   >
                     Cookie Policy{" "}
                   </a>{" "}
@@ -960,7 +960,7 @@ otherwise provided by law.
     . You understand and acknowledge that Your personal data
 supplied during the course of the Competition will be collected and
 processed in accordance with INTERNATIONAL FAN MEDIA, SL’s
-Privacy Policy set out at <a href="https://internationalfanmedia.com/ReMin/privacyPolicy">https://internationalfanmedia.com/ReMin/privacyPolicy</a>
+Privacy Policy set out at <a href={`${process.env.NEXT_PUBLIC_HOST}/ReMin/privacyPolicy`} >https://internationalfanmedia.com/ReMin/privacyPolicy</a>
     </li>
     <li>
     INTERNATIONAL FAN MEDIA, SL may need to transfer certain
