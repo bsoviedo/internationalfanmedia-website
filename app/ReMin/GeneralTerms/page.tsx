@@ -802,14 +802,36 @@ PRIZES
 
 <li>
 The Competition is made up of the following prizes:
-• Grand Prize: A visit to El Santiago Bernabeu to watch an official
-game of El Real Madrid for one person in 2025: One (1) round trip
-flight in economy class to Madrid; One (1) entrance for a Real Madrid
-game; One (1) entrance for the El Santiago Bernabeu Tour (if it is
-open on the dates of the trip,); Two (2) nights of hotel chosen by
-International Fan Media, SL in Madrid; and 150.00 € per diem.
-• Secondary Prize: A Real Madrid 2024/2025 Season Home Authentic
-Shirt. 
+Freemium
+<ul style={{listStyleType:"initial"}}>
+<li>
+Most points in March 2025: One Real Madrid Home Shirt 24/25 White
+</li>
+<li>
+Most points in April 2025: One Real Madrid Away Shirt 24/25 Orange.
+</li>
+<li>
+Most points in May 2025: One Real Madrid Home Long Sleeve Shirt 24/25 White.
+</li>
+<li>
+Most points Accumulated March 2025 - May 2025: One Real Madrid adidas Real Urban T-Shirt Black.
+</li>
+</ul>
+<br/>
+
+Premium – Work in Progress - TBD
+
+<ul style={{listStyleType:"initial"}}>
+  <li>
+  Grand Prize: A visit to El Santiago Bernabeu to watch an official game of El Real Madrid for one person in 2025: One (1) round trip flight in economy class to Madrid; One (1) entrance for a Real Madrid game; One (1) entrance for the El Santiago Bernabeu Tour (if it is open on the dates of the trip,); Two (2) nights of hotel chosen by International Fan Media, SL in Madrid; and 150.00 € per diem. 
+  </li>
+
+  <li>
+  Secondary Prize: A Real Madrid 2024/2025 Season Home Authentic Shirt.
+  </li>
+
+</ul>
+
 
 
 </li>
