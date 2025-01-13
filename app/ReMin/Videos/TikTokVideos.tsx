@@ -61,7 +61,7 @@ const TikTokVideos = () => {
             >
               <section>
                 {/* Fallback para mostrar un enlace en caso de fallo */}
-                <a href={url} target="_blank" rel="noopener noreferrer">
+                <a href={url} target="_blank" rel="noopener noreferrer" style={{"color": "#ffffff"}}>
                   Watch on TikTok
                 </a>
               </section>

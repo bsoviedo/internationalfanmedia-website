@@ -137,28 +137,28 @@ const Body: React.FC = () => {
             {/* Limitar el contenedor a un ancho máximo y añadir margen superior */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                {
-                  thumbnail: "/imgs/thumbnails/hqdefault.webp",
-                  videoId: "UaVqbh3YqvE",
+                {  
+                  thumbnail: "/imgs/thumbnails/thumbnail-210k.webp",
+                  videoId: "j9V7JXSh3tA",
                   title:
-                    "🔥BACK IN BUSINESS😤 Real Madrid vs Osasuna Bernabeu Live Crowd Reactions & 4k Highlights",
+                    "👀THE ‘Hala Madrid y Nada Mas’ Anthem❤️‍🔥 El Clasico Real Madrid v Barça Estadio Santiago Bernabéu 4K",
                 },
                 {
-                  thumbnail: "/imgs/thumbnails/thumbnail-2.webp",
-                  videoId: "ffzrm-Wp5Fg",
+                  thumbnail: "/imgs/thumbnails/thumbnail-44k.webp",
+                  videoId: "bMKGlof-Ofo",
                   title:
-                    "🚨What is wrong with Real Madrid?🤔 Real Madrid vs AC Milan Post Match Fan Reactions",
+                    "😤Real Madrid Fans welcome the Team Bus ahead of the Manchester City Champions League Clash👀",
                 },
                 {
-                  thumbnail: "/imgs/thumbnails/thumbnail-3.webp",
-                  videoId: "neiYUAmwqKQ",
-                  title: "🌟 Who really deserves to win the Ballon d’Or?? 👀",
+                  thumbnail: "/imgs/thumbnails/thumbnail-26k.webp",
+                  videoId: "GOFMpAzmvq8",
+                  title: "🔥Vini’s Ballon D’Or Statement😤 Real Madrid v Borussia Dortmund Live Crowd Reactions & 4k Highlights!",
                 },
                 {
-                  thumbnail: "/imgs/thumbnails/thumbnail-4.webp",
-                  videoId: "z0HtTwERxYE",
+                  thumbnail: "/imgs/thumbnails/thumbnail-23k.webp",
+                  videoId: "qgIu4YKWkmA",
                   title:
-                    "🚨Nightmare at the Bernabeu🫣 Real Madrid vs Barcelona El Clasico Live Crowd Reactions & 4k Highlights",
+                    "🔥The Moment Lunin SILENCED the Etihad🤫 Man City vs Real Madrid Champions League Live Crowd Reactions",
                 },
               ].map((item, idx) => (
                 <a
