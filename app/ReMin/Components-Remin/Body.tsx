@@ -126,11 +126,6 @@ const Body: React.FC = () => {
             <h2 className="text-purple-600 text-3xl font-bold text-center md:text-left md:text-5xl lg:text-6xl">
             Youtube
             </h2>
-            <p className="mt-5 text-center md:text-center md:text-xl">
-              It&apos;s a lifestyle. With Remin, you&apos;ll feel like
-              you&apos;re seated in the Bernabéu stands, chanting alongside
-              thousands, united by passion.
-            </p>
           </div>
 
           {/* Sección de Recent Uploads (Videos) */}
