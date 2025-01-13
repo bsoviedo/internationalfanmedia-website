@@ -9,13 +9,32 @@ const TikTokVideos = () => {
   ];
 
   useEffect(() => {
-    // Cargar el script de TikTok para procesar los embeds
-    if (!document.querySelector('script[src="https://www.tiktok.com/embed.js"]')) {
-      const script = document.createElement('script');
-      script.src = 'https://www.tiktok.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
+    const loadTikTokScript = () => {
+      // Verifica si el script ya está cargado
+      if (!document.querySelector('script[src="https://www.tiktok.com/embed.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://www.tiktok.com/embed.js';
+        script.async = true;
+        script.onload = () => {
+          // Inicializa TikTok Embeds si el script ya está cargado
+          //@ts-ignore
+          if (window.tiktokEmbed && window.tiktokEmbed.init) {
+              //@ts-ignore
+            window.tiktokEmbed.init();
+          }
+        };
+        document.body.appendChild(script);
+      } else {
+        // Inicializa directamente si el script ya estaba presente
+          //@ts-ignore
+        if (window.tiktokEmbed && window.tiktokEmbed.init) {
+            //@ts-ignore
+          window.tiktokEmbed.init();
+        }
+      }
+    };
+
+    loadTikTokScript();
   }, []);
 
   return (
@@ -35,12 +54,17 @@ const TikTokVideos = () => {
               cite={url}
               data-video-id={url.split('/').pop()}
               style={{
-                maxWidth: '700px',
+                maxWidth: '100%', // Diseño flexible
                 margin: '0 auto',
-                height: '650px', // Ajustar altura para hacerlo más pequeño
+                height: 'auto', // Ajusta la altura automáticamente
               }}
             >
-              <section></section>
+              <section>
+                {/* Fallback para mostrar un enlace en caso de fallo */}
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  Watch on TikTok
+                </a>
+              </section>
             </blockquote>
           </div>
         ))}
